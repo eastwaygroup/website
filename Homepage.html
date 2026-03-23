@@ -13,20 +13,20 @@
     theme: {
       extend: {
         colors: {
-          "primary-container": "#e61f38",
+          "primary-container": "#D0AC6E",
           "on-tertiary": "#303030",
-          "on-surface-variant": "#e6bdbb",
-          "outline": "#ad8886",
-          "inverse-on-surface": "#313030",
+          "on-surface-variant": "#B8D4C0",
+          "outline": "#5A7A64",
+          "inverse-on-surface": "#1C3529",
           "secondary-fixed": "#feddb8",
-          "on-surface": "#e5e2e1",
+          "on-surface": "#F5F0E8",
           "tertiary-fixed-dim": "#c7c6c6",
-          "outline-variant": "#5d3f3e",
+          "outline-variant": "#2D4A38",
           "on-primary": "#680010",
-          "surface-dim": "#131313",
+          "surface-dim": "#0D1A13",
           "secondary-fixed-dim": "#e1c19e",
           "on-secondary-fixed": "#291803",
-          "on-background": "#e5e2e1",
+          "on-background": "#F5F0E8",
           "tertiary": "#c7c6c6",
           "primary-fixed-dim": "#ffb3b0",
           "on-primary-fixed-variant": "#92001b",
@@ -34,31 +34,31 @@
           "on-primary-fixed": "#410007",
           "on-tertiary-fixed": "#1b1c1c",
           "secondary": "#e1c19e",
-          "surface-bright": "#393939",
+          "surface-bright": "#2D4A38",
           "on-secondary-container": "#cfb08e",
           "secondary-container": "#594328",
           "on-error": "#690005",
           "on-secondary-fixed-variant": "#594328",
           "surface-tint": "#ffb3b0",
-          "background": "#131313",
+          "background": "#0D1A13",
           "error": "#ffb4ab",
           "on-tertiary-container": "#ffffff",
-          "on-primary-container": "#ffffff",
+          "on-primary-container": "#1C3529",
           "tertiary-fixed": "#e4e2e2",
-          "surface-container-highest": "#353535",
+          "surface-container-highest": "#2D4A38",
           "tertiary-container": "#767676",
-          "surface-variant": "#353535",
+          "surface-variant": "#2D4A38",
           "on-secondary": "#402d14",
-          "surface": "#131313",
-          "surface-container-high": "#2a2a2a",
-          "surface-container-lowest": "#0e0e0e",
+          "surface": "#0D1A13",
+          "surface-container-high": "#243D2F",
+          "surface-container-lowest": "#0A1510",
           "primary-fixed": "#ffdad8",
           "error-container": "#93000a",
-          "surface-container": "#20201f",
+          "surface-container": "#1C3529",
           "primary": "#ffb3b0",
-          "inverse-surface": "#e5e2e1",
-          "inverse-primary": "#bf0027",
-          "surface-container-low": "#1c1b1b",
+          "inverse-surface": "#F5F0E8",
+          "inverse-primary": "#8B6A35",
+          "surface-container-low": "#121E17",
           "on-tertiary-fixed-variant": "#464747"
         },
         fontFamily: {
@@ -87,16 +87,16 @@
 <body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
 
 <!-- TopAppBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#131313]/85 backdrop-blur-md">
+<nav class="fixed top-0 w-full z-50 bg-[#0D1A13]/85 backdrop-blur-md">
   <div class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
-    <a href="Homepage.html" class="text-2xl font-black text-[#E5E2E1] tracking-tighter font-headline">EASTWAY</a>
+    <a href="Homepage.html" class="text-2xl font-black text-[#F5F0E8] tracking-tighter font-headline">EASTWAY</a>
     <!-- Desktop Nav -->
     <div class="hidden md:flex items-center space-x-10">
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E61F38] border-b-2 border-[#E61F38] pb-1" href="Homepage.html">Home</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="About.html">About</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Services.html">Services</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Portfolio.html">Portfolio</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Homepage.html#contact">Contact</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#D0AC6E] border-b-2 border-[#D0AC6E] pb-1" href="Homepage.html">Home</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="About.html">About</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Services.html">Services</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Portfolio.html">Portfolio</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Homepage.html#contact">Contact</a>
     </div>
     <!-- Desktop CTA -->
     <a href="Homepage.html#contact" class="hidden md:inline-block bg-primary-container text-on-primary-container font-headline font-bold px-6 py-3 tracking-widest text-xs rounded-none hover:scale-105 active:scale-95 transition-all">
@@ -104,20 +104,20 @@
     </a>
     <!-- Mobile Hamburger -->
     <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden flex flex-col justify-center gap-1.5 p-1" aria-label="Toggle navigation">
-      <span class="w-6 h-0.5 bg-[#E5E2E1] block"></span>
-      <span class="w-6 h-0.5 bg-[#E5E2E1] block"></span>
-      <span class="w-6 h-0.5 bg-[#E5E2E1] block"></span>
+      <span class="w-6 h-0.5 bg-[#F5F0E8] block"></span>
+      <span class="w-6 h-0.5 bg-[#F5F0E8] block"></span>
+      <span class="w-6 h-0.5 bg-[#F5F0E8] block"></span>
     </button>
   </div>
   <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden md:hidden bg-[#131313] border-t border-white/10 px-8 py-6">
+  <div id="mobileMenu" class="hidden md:hidden bg-[#0D1A13] border-t border-white/10 px-8 py-6">
     <div class="flex flex-col gap-5">
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E61F38]" href="Homepage.html">Home</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="About.html">About</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Services.html">Services</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Portfolio.html">Portfolio</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Homepage.html#contact">Contact</a>
-      <a href="Homepage.html#contact" class="bg-[#e61f38] text-white font-['Plus_Jakarta_Sans'] font-bold px-6 py-3 tracking-widest text-xs uppercase text-center mt-2 inline-block">GET A QUOTE</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#D0AC6E]" href="Homepage.html">Home</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="About.html">About</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Services.html">Services</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Portfolio.html">Portfolio</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Homepage.html#contact">Contact</a>
+      <a href="Homepage.html#contact" class="bg-[#D0AC6E] text-white font-['Plus_Jakarta_Sans'] font-bold px-6 py-3 tracking-widest text-xs uppercase text-center mt-2 inline-block">GET A QUOTE</a>
     </div>
   </div>
 </nav>
@@ -141,7 +141,7 @@
     <div class="relative z-10 text-center px-4 max-w-5xl">
       <span class="text-primary-container font-headline font-extrabold tracking-[0.4em] text-sm uppercase mb-6 block">ENGINEERING PRECISION</span>
       <h1 class="text-6xl md:text-8xl font-black font-headline text-on-surface leading-[0.9] tracking-tighter mb-8 uppercase">
-        BUILDING THE <span class="text-transparent" style="-webkit-text-stroke: 1px #E5E2E1;">FUTURE</span> OF INDUSTRY
+        BUILDING THE <span class="text-transparent" style="-webkit-text-stroke: 1px #F5F0E8;">FUTURE</span> OF INDUSTRY
       </h1>
       <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
         <a href="Portfolio.html" class="bg-primary-container text-on-primary-container font-headline font-bold px-10 py-5 tracking-widest rounded-none text-sm group flex items-center gap-3">
@@ -202,7 +202,7 @@
         <!-- General Contracting -->
         <div class="group relative aspect-[3/4] overflow-hidden">
           <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Commercial building steel framework" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB1km3K7aITzlKy_ku6l90NTPq6vIubnRN4c1DvSyDVNm66gETnwBpQTzvCdKnPxg2CHCqsz5f-Wva5lVuZk-ws-KtsXoYvobkWRKhTSE3eKhdd0OEUZ1MEEL33dAkD-JE3Gnxik7KfDE-LWWNahc8NiqvX4nZOL1XqFhaVYKDDhVcOrv3LkboHcWdUyIhTPTPvvD3rdR9NbYiP-WFwGn-56ZxxH-B5e6ZzdoHc-HdIXgkjjsO8KRyEHwJBiwEPfODtVhNsZHfbCY6"/>
-          <div class="absolute inset-0 bg-[#131313]/80 group-hover:bg-[#131313]/60 transition-colors backdrop-blur-[2px]"></div>
+          <div class="absolute inset-0 bg-[#0D1A13]/80 group-hover:bg-[#0D1A13]/60 transition-colors backdrop-blur-[2px]"></div>
           <div class="absolute inset-0 p-10 flex flex-col justify-end">
             <span class="text-primary-container font-black text-4xl mb-4">01</span>
             <h3 class="text-3xl font-black font-headline text-on-surface uppercase mb-4 tracking-tight leading-none">General <br/>Contracting</h3>
@@ -218,7 +218,7 @@
         <!-- Project Management -->
         <div class="group relative aspect-[3/4] overflow-hidden md:mt-12">
           <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Close up of architectural details on modern building" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC92egJCoAwjiBDI9gNSzMuhJNjqW9vZLAQk-f0-ip7n9SS6A05MGxTK3ppbKsqaYevNuP-6m6r7PDUUzSKXsC9OgHI6oAJM1FjloNVdeO6g5r6ld__T5n6eawpS-3YWvII5QjMe-iolPLy2ZmeDCOfU_A-kjoYErbSkRrDS_SSxvb_ZXBDxAx1SyeFaiOZbI4o_X2Y73OTqWjYSSxU5HSAoJo7imuckRXcV_nwfR0j2aDxqq-kr5gTRQCOdlUFmKJOZFCkBCSvQJqB"/>
-          <div class="absolute inset-0 bg-[#131313]/80 group-hover:bg-[#131313]/60 transition-colors backdrop-blur-[2px]"></div>
+          <div class="absolute inset-0 bg-[#0D1A13]/80 group-hover:bg-[#0D1A13]/60 transition-colors backdrop-blur-[2px]"></div>
           <div class="absolute inset-0 p-10 flex flex-col justify-end">
             <span class="text-primary-container font-black text-4xl mb-4">02</span>
             <h3 class="text-3xl font-black font-headline text-on-surface uppercase mb-4 tracking-tight leading-none">Project <br/>Management</h3>
@@ -234,7 +234,7 @@
         <!-- Design-Build -->
         <div class="group relative aspect-[3/4] overflow-hidden">
           <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Skyscraper under construction" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdxfnihIVo6hQnl5p9at_1d4C7G6ZeF1Ub-45KbNajbb5Su0zhRKM-00RFliV5-o3zeN2IEV8Z_vPNfl9Cvnowz055o4PPbc7_Uf9-zbark4sbxsyn5st1wmeEp8PPRWBvg8NQkv06-0zS2fv9tdUvoFQolF8AjOqm1TxLTTdF66qGJU169hSapMuSDhuZfBcZqtb1esLuBk7arJEwyUntgdT1VDFB06rr3vvgFXjRSFVRwACAOur40BUikXwzAgjHUE-mWwYijZJv"/>
-          <div class="absolute inset-0 bg-[#131313]/80 group-hover:bg-[#131313]/60 transition-colors backdrop-blur-[2px]"></div>
+          <div class="absolute inset-0 bg-[#0D1A13]/80 group-hover:bg-[#0D1A13]/60 transition-colors backdrop-blur-[2px]"></div>
           <div class="absolute inset-0 p-10 flex flex-col justify-end">
             <span class="text-primary-container font-black text-4xl mb-4">03</span>
             <h3 class="text-3xl font-black font-headline text-on-surface uppercase mb-4 tracking-tight leading-none">Design-Build</h3>
@@ -266,48 +266,48 @@
 </main>
 
 <!-- Footer -->
-<footer id="contact" class="bg-[#0E0E0E] w-full py-16 px-12">
+<footer id="contact" class="bg-[#0A1510] w-full py-16 px-12">
   <div class="max-w-7xl mx-auto">
-    <div class="text-3xl font-black text-[#E5E2E1] mb-8 font-headline tracking-tighter">EASTWAY</div>
+    <div class="text-3xl font-black text-[#F5F0E8] mb-8 font-headline tracking-tighter">EASTWAY</div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
       <div>
-        <h5 class="text-[#E61F38] font-headline font-bold uppercase tracking-widest text-xs mb-6">Get in Touch</h5>
-        <ul class="space-y-4 font-['Inter'] text-sm text-[#E5E2E1]">
-          <li class="hover:text-[#E61F38] transition-colors cursor-pointer flex items-center gap-2">
+        <h5 class="text-[#D0AC6E] font-headline font-bold uppercase tracking-widest text-xs mb-6">Get in Touch</h5>
+        <ul class="space-y-4 font-['Inter'] text-sm text-[#F5F0E8]">
+          <li class="hover:text-[#D0AC6E] transition-colors cursor-pointer flex items-center gap-2">
             <span class="material-symbols-outlined text-sm">mail</span> info@eastwayconstruction.com
           </li>
-          <li class="hover:text-[#E61F38] transition-colors cursor-pointer flex items-center gap-2">
+          <li class="hover:text-[#D0AC6E] transition-colors cursor-pointer flex items-center gap-2">
             <span class="material-symbols-outlined text-sm">call</span> +1 (800) 555-0100
           </li>
-          <li class="hover:text-[#E61F38] transition-colors cursor-pointer flex items-center gap-2">
+          <li class="hover:text-[#D0AC6E] transition-colors cursor-pointer flex items-center gap-2">
             <span class="material-symbols-outlined text-sm">schedule</span> Mon – Fri: 7am – 5pm
           </li>
         </ul>
       </div>
       <div>
-        <h5 class="text-[#E61F38] font-headline font-bold uppercase tracking-widest text-xs mb-6">Head Office</h5>
-        <p class="font-['Inter'] text-sm text-[#E5E2E1]/70 leading-relaxed">
+        <h5 class="text-[#D0AC6E] font-headline font-bold uppercase tracking-widest text-xs mb-6">Head Office</h5>
+        <p class="font-['Inter'] text-sm text-[#F5F0E8]/70 leading-relaxed">
           1200 Industrial Parkway<br/>
           Suite 400<br/>
           Chicago, IL 60601
         </p>
       </div>
       <div>
-        <h5 class="text-[#E61F38] font-headline font-bold uppercase tracking-widest text-xs mb-6">Regional Offices</h5>
-        <ul class="space-y-2 font-['Inter'] text-sm text-[#E5E2E1]/70">
-          <li class="hover:text-[#E61F38] transition-transform hover:translate-x-1 duration-200 cursor-pointer">Houston, TX</li>
-          <li class="hover:text-[#E61F38] transition-transform hover:translate-x-1 duration-200 cursor-pointer">Phoenix, AZ</li>
-          <li class="hover:text-[#E61F38] transition-transform hover:translate-x-1 duration-200 cursor-pointer">Charlotte, NC</li>
+        <h5 class="text-[#D0AC6E] font-headline font-bold uppercase tracking-widest text-xs mb-6">Regional Offices</h5>
+        <ul class="space-y-2 font-['Inter'] text-sm text-[#F5F0E8]/70">
+          <li class="hover:text-[#D0AC6E] transition-transform hover:translate-x-1 duration-200 cursor-pointer">Houston, TX</li>
+          <li class="hover:text-[#D0AC6E] transition-transform hover:translate-x-1 duration-200 cursor-pointer">Phoenix, AZ</li>
+          <li class="hover:text-[#D0AC6E] transition-transform hover:translate-x-1 duration-200 cursor-pointer">Charlotte, NC</li>
         </ul>
       </div>
     </div>
     <div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-      <div class="font-['Inter'] text-xs text-[#E5E2E1]/40 uppercase tracking-widest">
+      <div class="font-['Inter'] text-xs text-[#F5F0E8]/40 uppercase tracking-widest">
         &copy; 2026 EASTWAY CONSTRUCTION. ALL RIGHTS RESERVED.
       </div>
       <div class="flex gap-8">
-        <a class="font-['Inter'] text-xs text-[#E5E2E1]/40 hover:text-[#E61F38] transition-colors uppercase tracking-widest" href="#">Privacy Policy</a>
-        <a class="font-['Inter'] text-xs text-[#E5E2E1]/40 hover:text-[#E61F38] transition-colors uppercase tracking-widest" href="#">Terms of Service</a>
+        <a class="font-['Inter'] text-xs text-[#F5F0E8]/40 hover:text-[#D0AC6E] transition-colors uppercase tracking-widest" href="#">Privacy Policy</a>
+        <a class="font-['Inter'] text-xs text-[#F5F0E8]/40 hover:text-[#D0AC6E] transition-colors uppercase tracking-widest" href="#">Terms of Service</a>
       </div>
     </div>
   </div>
