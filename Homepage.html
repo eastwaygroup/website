@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EASTWAY - Building the Future of Industry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary-container": "#e61f38",
+          "on-tertiary": "#303030",
+          "on-surface-variant": "#e6bdbb",
+          "outline": "#ad8886",
+          "inverse-on-surface": "#313030",
+          "secondary-fixed": "#feddb8",
+          "on-surface": "#e5e2e1",
+          "tertiary-fixed-dim": "#c7c6c6",
+          "outline-variant": "#5d3f3e",
+          "on-primary": "#680010",
+          "surface-dim": "#131313",
+          "secondary-fixed-dim": "#e1c19e",
+          "on-secondary-fixed": "#291803",
+          "on-background": "#e5e2e1",
+          "tertiary": "#c7c6c6",
+          "primary-fixed-dim": "#ffb3b0",
+          "on-primary-fixed-variant": "#92001b",
+          "on-error-container": "#ffdad6",
+          "on-primary-fixed": "#410007",
+          "on-tertiary-fixed": "#1b1c1c",
+          "secondary": "#e1c19e",
+          "surface-bright": "#393939",
+          "on-secondary-container": "#cfb08e",
+          "secondary-container": "#594328",
+          "on-error": "#690005",
+          "on-secondary-fixed-variant": "#594328",
+          "surface-tint": "#ffb3b0",
+          "background": "#131313",
+          "error": "#ffb4ab",
+          "on-tertiary-container": "#ffffff",
+          "on-primary-container": "#ffffff",
+          "tertiary-fixed": "#e4e2e2",
+          "surface-container-highest": "#353535",
+          "tertiary-container": "#767676",
+          "surface-variant": "#353535",
+          "on-secondary": "#402d14",
+          "surface": "#131313",
+          "surface-container-high": "#2a2a2a",
+          "surface-container-lowest": "#0e0e0e",
+          "primary-fixed": "#ffdad8",
+          "error-container": "#93000a",
+          "surface-container": "#20201f",
+          "primary": "#ffb3b0",
+          "inverse-surface": "#e5e2e1",
+          "inverse-primary": "#bf0027",
+          "surface-container-low": "#1c1b1b",
+          "on-tertiary-fixed-variant": "#464747"
+        },
+        fontFamily: {
+          "headline": ["Plus Jakarta Sans"],
+          "body": ["Inter"],
+          "label": ["Inter"]
+        },
+        borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .glass-panel {
+    background: rgba(19, 19, 19, 0.85);
+    backdrop-filter: blur(12px);
+  }
+  .hero-gradient {
+    background: linear-gradient(to bottom, rgba(14, 14, 14, 0.4), rgba(19, 19, 19, 1));
+  }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/85 backdrop-blur-md">
+  <div class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
+    <a href="Homepage.html" class="text-2xl font-black text-[#E5E2E1] tracking-tighter font-headline">EASTWAY</a>
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex items-center space-x-10">
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E61F38] border-b-2 border-[#E61F38] pb-1" href="Homepage.html">Home</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="About.html">About</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Services.html">Services</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Portfolio.html">Portfolio</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Homepage.html#contact">Contact</a>
+    </div>
+    <!-- Desktop CTA -->
+    <a href="Homepage.html#contact" class="hidden md:inline-block bg-primary-container text-on-primary-container font-headline font-bold px-6 py-3 tracking-widest text-xs rounded-none hover:scale-105 active:scale-95 transition-all">
+      GET A QUOTE
+    </a>
+    <!-- Mobile Hamburger -->
+    <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden flex flex-col justify-center gap-1.5 p-1" aria-label="Toggle navigation">
+      <span class="w-6 h-0.5 bg-[#E5E2E1] block"></span>
+      <span class="w-6 h-0.5 bg-[#E5E2E1] block"></span>
+      <span class="w-6 h-0.5 bg-[#E5E2E1] block"></span>
+    </button>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-[#131313] border-t border-white/10 px-8 py-6">
+    <div class="flex flex-col gap-5">
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E61F38]" href="Homepage.html">Home</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="About.html">About</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Services.html">Services</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Portfolio.html">Portfolio</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Homepage.html#contact">Contact</a>
+      <a href="Homepage.html#contact" class="bg-[#e61f38] text-white font-['Plus_Jakarta_Sans'] font-bold px-6 py-3 tracking-widest text-xs uppercase text-center mt-2 inline-block">GET A QUOTE</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero Section -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <video
+        class="w-full h-full object-cover grayscale opacity-50"
+        autoplay
+        loop
+        muted
+        playsinline
+        poster="https://lh3.googleusercontent.com/aida-public/AB6AXuCtNfRT9GA08qXQgL1_EKOuTPtGFNhDeDvEBOyVSlp52LIgqzZEmEkX7PpbtYtbs-E883kXw_yQICVJX6W1dxYt4j1ranfsfWolgDgvjUuMNF9raZ3lPMv_1UBKdD-0vTSO6WBE3mz3Y7u8pdq9mcMY3rTxgugrJWG7sWsNF95QF6ROx2asCmV0oeDLHUozF96Xj0QBfe9f-u_8VMGpB9ASIg79DMCgsV4UAcVOcShdmQL3lO8RH8GuYrAnhF9r9cr1t9_DmQBBcRNP"
+      >
+        <source src="eastwayVideo1.mp4" type="video/mp4"/>
+      </video>
+      <div class="absolute inset-0 hero-gradient"></div>
+    </div>
+    <div class="relative z-10 text-center px-4 max-w-5xl">
+      <span class="text-primary-container font-headline font-extrabold tracking-[0.4em] text-sm uppercase mb-6 block">ENGINEERING PRECISION</span>
+      <h1 class="text-6xl md:text-8xl font-black font-headline text-on-surface leading-[0.9] tracking-tighter mb-8 uppercase">
+        BUILDING THE <span class="text-transparent" style="-webkit-text-stroke: 1px #E5E2E1;">FUTURE</span> OF INDUSTRY
+      </h1>
+      <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+        <a href="Portfolio.html" class="bg-primary-container text-on-primary-container font-headline font-bold px-10 py-5 tracking-widest rounded-none text-sm group flex items-center gap-3">
+          EXPLORE PROJECTS
+          <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+        <a href="Services.html" class="bg-transparent border border-outline-variant/30 text-on-surface font-headline font-bold px-10 py-5 tracking-widest rounded-none text-sm hover:bg-surface-container-high transition-colors">
+          OUR CAPABILITIES
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Summary Section -->
+  <section class="bg-surface-container-low py-32 px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div class="relative">
+        <div class="absolute -top-10 -left-10 w-32 h-32 border-t-4 border-l-4 border-primary-container opacity-50"></div>
+        <img class="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Construction professional reviewing architectural blueprints" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2tDKJB4-A_SXOp0jWUpGpeToCXBGVqlD5ytqmb4EJEUruALsmDPrM7iorQiGhjx4hAKJDwRjHZv9ceX97rsby7JX5aXx0dTp7ugcHuKW2dpu08W8MKO3ro0fkKwLQGm0bqzaYo8mhhJgily1XNcjK58FkYMe5oy23lM3ifPcT_69XcTsVAZ1ooaiczIlq1TN6fUHNMdE5aMz-8t7_xFgTeJkk7dbNtSZOcVwKBD7jRlLDram9Z3sdaGV3JVL5NH94ZUrTYb1HhCYb"/>
+        <div class="absolute -bottom-8 -right-8 bg-primary-container p-12 hidden md:block">
+          <div class="text-5xl font-black font-headline text-on-primary-container">25+</div>
+          <div class="text-xs font-bold tracking-[0.2em] text-on-primary-container/80 uppercase">Years of Excellence</div>
+        </div>
+      </div>
+      <div class="space-y-8">
+        <div class="flex items-center gap-4">
+          <div class="h-[2px] w-12 bg-primary-container"></div>
+          <span class="font-headline font-bold text-primary-container tracking-widest text-sm uppercase">About Eastway</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black font-headline leading-tight tracking-tight uppercase">
+          Strength in strategy, <br/>mastery in execution.
+        </h2>
+        <p class="text-on-surface/70 leading-relaxed text-lg max-w-xl font-body">
+          At EASTWAY, we don't just build structures; we forge industrial landmarks. With over two decades of technical expertise, our approach integrates cutting-edge engineering with a relentless focus on safety and structural integrity.
+        </p>
+        <div class="grid grid-cols-2 gap-8 pt-6">
+          <div>
+            <h4 class="font-headline font-extrabold text-on-surface uppercase mb-2">Precision First</h4>
+            <p class="text-sm text-on-surface/60">Every measurement verified. Every weld inspected. Zero compromise on quality.</p>
+          </div>
+          <div>
+            <h4 class="font-headline font-extrabold text-on-surface uppercase mb-2">Scalable Solutions</h4>
+            <p class="text-sm text-on-surface/60">From regional facilities to massive industrial complexes, we scale to your vision.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Grid -->
+  <section class="bg-surface py-32 px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-20 text-center">
+        <h2 class="text-5xl md:text-6xl font-black font-headline uppercase tracking-tighter mb-4">Core Services</h2>
+        <p class="text-on-surface/60 font-body uppercase tracking-[0.3em] text-sm">Industrial Infrastructure Expertise</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- General Contracting -->
+        <div class="group relative aspect-[3/4] overflow-hidden">
+          <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Commercial building steel framework" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB1km3K7aITzlKy_ku6l90NTPq6vIubnRN4c1DvSyDVNm66gETnwBpQTzvCdKnPxg2CHCqsz5f-Wva5lVuZk-ws-KtsXoYvobkWRKhTSE3eKhdd0OEUZ1MEEL33dAkD-JE3Gnxik7KfDE-LWWNahc8NiqvX4nZOL1XqFhaVYKDDhVcOrv3LkboHcWdUyIhTPTPvvD3rdR9NbYiP-WFwGn-56ZxxH-B5e6ZzdoHc-HdIXgkjjsO8KRyEHwJBiwEPfODtVhNsZHfbCY6"/>
+          <div class="absolute inset-0 bg-[#131313]/80 group-hover:bg-[#131313]/60 transition-colors backdrop-blur-[2px]"></div>
+          <div class="absolute inset-0 p-10 flex flex-col justify-end">
+            <span class="text-primary-container font-black text-4xl mb-4">01</span>
+            <h3 class="text-3xl font-black font-headline text-on-surface uppercase mb-4 tracking-tight leading-none">General <br/>Contracting</h3>
+            <p class="text-on-surface/70 text-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+              Comprehensive project management from site preparation to final handover.
+            </p>
+            <a class="text-primary-container font-headline font-bold text-sm tracking-widest uppercase flex items-center gap-2 group/link" href="Services.html">
+              VIEW SERVICES
+              <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+        <!-- Project Management -->
+        <div class="group relative aspect-[3/4] overflow-hidden md:mt-12">
+          <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Close up of architectural details on modern building" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC92egJCoAwjiBDI9gNSzMuhJNjqW9vZLAQk-f0-ip7n9SS6A05MGxTK3ppbKsqaYevNuP-6m6r7PDUUzSKXsC9OgHI6oAJM1FjloNVdeO6g5r6ld__T5n6eawpS-3YWvII5QjMe-iolPLy2ZmeDCOfU_A-kjoYErbSkRrDS_SSxvb_ZXBDxAx1SyeFaiOZbI4o_X2Y73OTqWjYSSxU5HSAoJo7imuckRXcV_nwfR0j2aDxqq-kr5gTRQCOdlUFmKJOZFCkBCSvQJqB"/>
+          <div class="absolute inset-0 bg-[#131313]/80 group-hover:bg-[#131313]/60 transition-colors backdrop-blur-[2px]"></div>
+          <div class="absolute inset-0 p-10 flex flex-col justify-end">
+            <span class="text-primary-container font-black text-4xl mb-4">02</span>
+            <h3 class="text-3xl font-black font-headline text-on-surface uppercase mb-4 tracking-tight leading-none">Project <br/>Management</h3>
+            <p class="text-on-surface/70 text-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+              Precision scheduling and resource allocation to ensure on-time delivery.
+            </p>
+            <a class="text-primary-container font-headline font-bold text-sm tracking-widest uppercase flex items-center gap-2 group/link" href="Services.html">
+              VIEW SERVICES
+              <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+        <!-- Design-Build -->
+        <div class="group relative aspect-[3/4] overflow-hidden">
+          <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Skyscraper under construction" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdxfnihIVo6hQnl5p9at_1d4C7G6ZeF1Ub-45KbNajbb5Su0zhRKM-00RFliV5-o3zeN2IEV8Z_vPNfl9Cvnowz055o4PPbc7_Uf9-zbark4sbxsyn5st1wmeEp8PPRWBvg8NQkv06-0zS2fv9tdUvoFQolF8AjOqm1TxLTTdF66qGJU169hSapMuSDhuZfBcZqtb1esLuBk7arJEwyUntgdT1VDFB06rr3vvgFXjRSFVRwACAOur40BUikXwzAgjHUE-mWwYijZJv"/>
+          <div class="absolute inset-0 bg-[#131313]/80 group-hover:bg-[#131313]/60 transition-colors backdrop-blur-[2px]"></div>
+          <div class="absolute inset-0 p-10 flex flex-col justify-end">
+            <span class="text-primary-container font-black text-4xl mb-4">03</span>
+            <h3 class="text-3xl font-black font-headline text-on-surface uppercase mb-4 tracking-tight leading-none">Design-Build</h3>
+            <p class="text-on-surface/70 text-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+              Integrated architecture and construction for maximum efficiency and innovation.
+            </p>
+            <a class="text-primary-container font-headline font-bold text-sm tracking-widest uppercase flex items-center gap-2 group/link" href="Services.html">
+              VIEW SERVICES
+              <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-primary-container py-24 px-8 overflow-hidden relative">
+    <div class="absolute right-0 top-0 text-[20rem] font-black text-surface/5 leading-none translate-x-1/4 select-none">EASTWAY</div>
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 relative z-10">
+      <h2 class="text-4xl md:text-5xl font-black font-headline text-on-primary-container uppercase tracking-tight max-w-2xl leading-none">
+        READY TO BRING YOUR INDUSTRIAL VISION TO LIFE?
+      </h2>
+      <a href="Homepage.html#contact" class="bg-surface text-on-surface font-headline font-black px-12 py-6 tracking-[0.2em] rounded-none hover:bg-surface-bright transition-colors whitespace-nowrap inline-block">
+        START YOUR QUOTE
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer id="contact" class="bg-[#0E0E0E] w-full py-16 px-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-3xl font-black text-[#E5E2E1] mb-8 font-headline tracking-tighter">EASTWAY</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
+      <div>
+        <h5 class="text-[#E61F38] font-headline font-bold uppercase tracking-widest text-xs mb-6">Get in Touch</h5>
+        <ul class="space-y-4 font-['Inter'] text-sm text-[#E5E2E1]">
+          <li class="hover:text-[#E61F38] transition-colors cursor-pointer flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">mail</span> info@eastwayconstruction.com
+          </li>
+          <li class="hover:text-[#E61F38] transition-colors cursor-pointer flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">call</span> +1 (800) 555-0100
+          </li>
+          <li class="hover:text-[#E61F38] transition-colors cursor-pointer flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">schedule</span> Mon – Fri: 7am – 5pm
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-[#E61F38] font-headline font-bold uppercase tracking-widest text-xs mb-6">Head Office</h5>
+        <p class="font-['Inter'] text-sm text-[#E5E2E1]/70 leading-relaxed">
+          1200 Industrial Parkway<br/>
+          Suite 400<br/>
+          Chicago, IL 60601
+        </p>
+      </div>
+      <div>
+        <h5 class="text-[#E61F38] font-headline font-bold uppercase tracking-widest text-xs mb-6">Regional Offices</h5>
+        <ul class="space-y-2 font-['Inter'] text-sm text-[#E5E2E1]/70">
+          <li class="hover:text-[#E61F38] transition-transform hover:translate-x-1 duration-200 cursor-pointer">Houston, TX</li>
+          <li class="hover:text-[#E61F38] transition-transform hover:translate-x-1 duration-200 cursor-pointer">Phoenix, AZ</li>
+          <li class="hover:text-[#E61F38] transition-transform hover:translate-x-1 duration-200 cursor-pointer">Charlotte, NC</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="font-['Inter'] text-xs text-[#E5E2E1]/40 uppercase tracking-widest">
+        &copy; 2026 EASTWAY CONSTRUCTION. ALL RIGHTS RESERVED.
+      </div>
+      <div class="flex gap-8">
+        <a class="font-['Inter'] text-xs text-[#E5E2E1]/40 hover:text-[#E61F38] transition-colors uppercase tracking-widest" href="#">Privacy Policy</a>
+        <a class="font-['Inter'] text-xs text-[#E5E2E1]/40 hover:text-[#E61F38] transition-colors uppercase tracking-widest" href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

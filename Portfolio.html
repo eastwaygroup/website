@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio | EASTWAY CONSTRUCTION</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary-container": "#e61f38",
+          "on-tertiary": "#303030",
+          "on-surface-variant": "#e6bdbb",
+          "outline": "#ad8886",
+          "inverse-on-surface": "#313030",
+          "secondary-fixed": "#feddb8",
+          "on-surface": "#e5e2e1",
+          "tertiary-fixed-dim": "#c7c6c6",
+          "outline-variant": "#5d3f3e",
+          "on-primary": "#680010",
+          "surface-dim": "#131313",
+          "secondary-fixed-dim": "#e1c19e",
+          "on-secondary-fixed": "#291803",
+          "on-background": "#e5e2e1",
+          "tertiary": "#c7c6c6",
+          "primary-fixed-dim": "#ffb3b0",
+          "on-primary-fixed-variant": "#92001b",
+          "on-error-container": "#ffdad6",
+          "on-primary-fixed": "#410007",
+          "on-tertiary-fixed": "#1b1c1c",
+          "secondary": "#e1c19e",
+          "surface-bright": "#393939",
+          "on-secondary-container": "#cfb08e",
+          "secondary-container": "#594328",
+          "on-error": "#690005",
+          "on-secondary-fixed-variant": "#594328",
+          "surface-tint": "#ffb3b0",
+          "background": "#131313",
+          "error": "#ffb4ab",
+          "on-tertiary-container": "#ffffff",
+          "on-primary-container": "#ffffff",
+          "tertiary-fixed": "#e4e2e2",
+          "surface-container-highest": "#353535",
+          "tertiary-container": "#767676",
+          "surface-variant": "#353535",
+          "on-secondary": "#402d14",
+          "surface": "#131313",
+          "surface-container-high": "#2a2a2a",
+          "surface-container-lowest": "#0e0e0e",
+          "primary-fixed": "#ffdad8",
+          "error-container": "#93000a",
+          "surface-container": "#20201f",
+          "primary": "#ffb3b0",
+          "inverse-surface": "#e5e2e1",
+          "inverse-primary": "#bf0027",
+          "surface-container-low": "#1c1b1b",
+          "on-tertiary-fixed-variant": "#464747"
+        },
+        fontFamily: {
+          "headline": ["Plus Jakarta Sans"],
+          "body": ["Inter"],
+          "label": ["Inter"]
+        },
+        borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .project-card:hover .project-overlay {
+    opacity: 0.85;
+  }
+  .project-card:hover .project-image {
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- TopAppBar -->
+<header class="bg-[#131313]/85 backdrop-blur-md fixed top-0 w-full z-50">
+  <nav class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
+    <a href="Homepage.html" class="text-2xl font-black text-[#E5E2E1] tracking-tighter font-headline">EASTWAY</a>
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex items-center space-x-8 font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider">
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Homepage.html">Home</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="About.html">About</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Services.html">Services</a>
+      <a class="text-[#E61F38] border-b-2 border-[#E61F38] pb-1" href="Portfolio.html">Portfolio</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Homepage.html#contact">Contact</a>
+    </div>
+    <!-- Desktop CTA -->
+    <a href="Homepage.html#contact" class="hidden md:inline-block bg-primary-container text-on-primary-container px-6 py-2 font-headline font-bold uppercase tracking-widest text-xs transition-transform active:scale-95">
+      GET A QUOTE
+    </a>
+    <!-- Mobile Hamburger -->
+    <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden flex flex-col justify-center gap-1.5 p-1" aria-label="Toggle navigation">
+      <span class="w-6 h-0.5 bg-[#E5E2E1] block"></span>
+      <span class="w-6 h-0.5 bg-[#E5E2E1] block"></span>
+      <span class="w-6 h-0.5 bg-[#E5E2E1] block"></span>
+    </button>
+  </nav>
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-[#131313] border-t border-white/10 px-8 py-6">
+    <div class="flex flex-col gap-5 font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider">
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Homepage.html">Home</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="About.html">About</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Services.html">Services</a>
+      <a class="text-[#E61F38]" href="Portfolio.html">Portfolio</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Homepage.html#contact">Contact</a>
+      <a href="Homepage.html#contact" class="bg-[#e61f38] text-white px-6 py-3 tracking-widest text-xs text-center mt-2 inline-block">GET A QUOTE</a>
+    </div>
+  </div>
+</header>
+
+<main class="pt-24 min-h-screen">
+  <!-- Hero Title Section -->
+  <section class="px-8 pt-16 pb-12 max-w-7xl mx-auto">
+    <h1 class="font-headline text-6xl md:text-8xl font-black tracking-tighter uppercase mb-4 leading-none">
+      Projects <span class="text-primary-container">Portal</span>
+    </h1>
+    <p class="font-body text-on-surface/60 max-w-2xl text-lg uppercase tracking-widest font-medium">
+      PRECISION ENGINEERING. MONOLITHIC SCALE. INDUSTRIAL EXCELLENCE.
+    </p>
+  </section>
+
+  <!-- Category Filter -->
+  <section class="px-8 mb-12 max-w-7xl mx-auto">
+    <div class="flex flex-wrap gap-4 font-headline text-xs font-bold uppercase tracking-widest">
+      <button class="bg-primary-container text-on-primary-container px-6 py-3">All Work</button>
+      <button class="bg-surface-container-low text-on-surface/70 hover:text-on-surface px-6 py-3 transition-colors">Commercial</button>
+      <button class="bg-surface-container-low text-on-surface/70 hover:text-on-surface px-6 py-3 transition-colors">Industrial</button>
+      <button class="bg-surface-container-low text-on-surface/70 hover:text-on-surface px-6 py-3 transition-colors">Institutional</button>
+    </div>
+  </section>
+
+  <!-- Project Grid -->
+  <section class="px-8 pb-32 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+      <!-- Project Tile 1: Industrial Large -->
+      <div class="md:col-span-8 md:row-span-2 relative overflow-hidden group project-card bg-surface-container-low">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 project-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBnuDLeeEgpsnhEPBUMXVCiQAfIpYg5G_YUKX-UlW5UMdnBoy3bHG8PiFTQyA0PMnX8IMJxEmh55Yy-7C3Oe4DpDfoVQ3zcpnbfFbIS2jyqRwkFOhBupZo2Tb3qU0ZUQFFuiGcA3Oc6yVtqsSyNzxi3TevE7SNIqRAzrlFf0xAIjz705IO9esHbZG-vmNZ4MHXFvbITD5jLE5OMZkOJkqj7StI9_J4U0-y61KSTK_KUWZPpMofmIYOQ_k3Si7NKv5fzxeIZLvf3C2BE')"></div>
+        <div class="absolute inset-0 bg-background/80 project-overlay opacity-0 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-8 backdrop-blur-sm">
+          <span class="text-primary-container font-headline font-bold uppercase tracking-widest text-xs mb-4">Industrial</span>
+          <h3 class="font-headline text-4xl font-black uppercase tracking-tighter mb-2">APEX LOGISTICS HUB</h3>
+          <p class="font-body text-on-surface/70 mb-8 uppercase tracking-widest text-sm">Chicago, Illinois</p>
+          <a class="border border-outline-variant/30 px-8 py-3 font-headline text-xs font-bold uppercase tracking-widest hover:bg-primary-container hover:border-primary-container transition-all" href="ProjectDetail.html">View Project Details</a>
+        </div>
+      </div>
+      <!-- Project Tile 2: Commercial Vertical -->
+      <div class="md:col-span-4 md:row-span-2 relative overflow-hidden group project-card bg-surface-container-low">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 project-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTP6TfNNUtF-j2kOVe0zsOmtR6OVckj05eNSTfJNKMO3-MhPuORyM0hnnaE3zGYv-RIRA745Z1cD053_9avXAvrdg4RXtNMGKZsLM6cFwwGtDEnL6ufYKg4Oa3XJL00WaUup2yr8P3qmo2hXf-nTK8HLP-iIm6tFYXqbWx_wBkykygDruzr4E36Tqia4wCy3UNd19Ba9ZpO3QTuIuETmTLaQPtvtUeKb4M-wdKy3HEbhkMa56-h0PCdqOjEkbC9VrD8JLCiMDFIg3t')"></div>
+        <div class="absolute inset-0 bg-background/80 project-overlay opacity-0 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-8 backdrop-blur-sm">
+          <span class="text-primary-container font-headline font-bold uppercase tracking-widest text-xs mb-4">Commercial</span>
+          <h3 class="font-headline text-3xl font-black uppercase tracking-tighter mb-2">THE GLASS TOWER</h3>
+          <p class="font-body text-on-surface/70 mb-8 uppercase tracking-widest text-sm">Austin, Texas</p>
+          <a class="border border-outline-variant/30 px-8 py-3 font-headline text-xs font-bold uppercase tracking-widest hover:bg-primary-container hover:border-primary-container transition-all" href="ProjectDetail.html">View Project Details</a>
+        </div>
+      </div>
+      <!-- Project Tile 3: Institutional Square -->
+      <div class="md:col-span-4 md:row-span-2 relative overflow-hidden group project-card bg-surface-container-low">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 project-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBgfOZZ0Wt0t0Rs5p4ElGLHsg_T-rtN4pLPVPrNmIEjWsM3UemqIJUf_R-7Zwro7v32S2mETa6VeO-pWeJoMNW86-DlLgt1e_ifokGFutQOybEfIqWto9dP4TK5dj4zmmsEcjUan3iRdd33BypfykibC5PsZJeUSVJrJVJk9D0ufq7XJA4_OYi3vPARgf-T7Q0IMkowacAiijSEkL8RdyLfyi6ygHE--tc1WUqnhyPLnrhaHJPIALLqJNkhVadEhxm4LkT6w2Yk1rmt')"></div>
+        <div class="absolute inset-0 bg-background/80 project-overlay opacity-0 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-8 backdrop-blur-sm">
+          <span class="text-primary-container font-headline font-bold uppercase tracking-widest text-xs mb-4">Institutional</span>
+          <h3 class="font-headline text-2xl font-black uppercase tracking-tighter mb-2">METRO RESEARCH LAB</h3>
+          <p class="font-body text-on-surface/70 mb-8 uppercase tracking-widest text-sm">Boston, MA</p>
+          <a class="border border-outline-variant/30 px-8 py-3 font-headline text-xs font-bold uppercase tracking-widest hover:bg-primary-container hover:border-primary-container transition-all" href="ProjectDetail.html">View Project Details</a>
+        </div>
+      </div>
+      <!-- Project Tile 4: Industrial Wide -->
+      <div class="md:col-span-8 md:row-span-1 relative overflow-hidden group project-card bg-surface-container-low">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 project-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfxf9mq9ZJ2ir2YXqq50W9uIwNwnPgyCorQvBiDgqRTJCVs-Trh0hUVQlWEtrjyvmroCMdI9lFHlPFmHtpbmO9Rj7Mz9qdol4Q5Tm5YMIw5_-AN7uLxFfTmngVk3GmaQpOwWn-w-rnZ9nUm552f4cmG0-Yapt13mD-YLPnCFBQGuom8SU9qi_ytmxEJaeBkezGsp7Mkwbexr_fkv_9LNstWDEvqy5CSrClH5KHvUfXpeI1dACWhjDJEx0FhS2y4_PQgYOFRpN5rcqg')"></div>
+        <div class="absolute inset-0 bg-background/80 project-overlay opacity-0 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-8 backdrop-blur-sm">
+          <span class="text-primary-container font-headline font-bold uppercase tracking-widest text-xs mb-2">Industrial</span>
+          <h3 class="font-headline text-2xl font-black uppercase tracking-tighter mb-1">TITAN ENERGY PLANT</h3>
+          <p class="font-body text-on-surface/70 uppercase tracking-widest text-xs">Phoenix, AZ</p>
+        </div>
+      </div>
+      <!-- Project Tile 5: Commercial Small -->
+      <div class="md:col-span-4 md:row-span-1 relative overflow-hidden group project-card bg-surface-container-low">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 project-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCH0CbRsD8Ccy9cLpXxZXj_Nfw-kK8Ls9emfHp-6lBPb_KArsQrbQ2dhORaOnFhPP6ZJAy8eIsHvqt6BHodXAd_ajObJ4i-5-JKosP-GPX3WNHHMPzyqig4uUuWrBdpNTJydLEUebIxHkuvAepqzhgNAeyjdslx7IIuLQoqQB9slIVkr6OZGj4XkvHZTKuZT8z2cXtViKqg7EmDeSxEAXqP6BPhEpMj5BLkKVSDKWxVLvm4eZzU4vrg1H4kvQpdH2A1a_rJfJKr02x')"></div>
+        <div class="absolute inset-0 bg-background/80 project-overlay opacity-0 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-8 backdrop-blur-sm">
+          <span class="text-primary-container font-headline font-bold uppercase tracking-widest text-xs mb-2">Commercial</span>
+          <h3 class="font-headline text-2xl font-black uppercase tracking-tighter mb-1">NEXUS HQ</h3>
+          <p class="font-body text-on-surface/70 uppercase tracking-widest text-xs">Seattle, WA</p>
+        </div>
+      </div>
+      <!-- Project Tile 6: Institutional Wide -->
+      <div class="md:col-span-4 md:row-span-1 relative overflow-hidden group project-card bg-surface-container-low">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 project-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-xX9217pmpBU3Lf3JNvvRC9hxJbEFv8k0N1Gi-XTDdSr2zZz3L_AkWnvsIA5PVPZrnnHEW-Qn27cmd3X-x81recCIIx5iMuGYhnc2PjHgBGQ1HeurJjhaeHywW5_1CAegf6aOj6T1nxJUEZ8FmrXcCVeVHjRK0xPR7d0MgLbXVRpQvgKy1ovIDSLpFXKsBHtKxRg_Bh4lbhvBgqIadRESckKzwGJTLUC_kbfOz8isTGE4QWbdfBPBfbQjcpmzsbEYeWazGPDNRcch')"></div>
+        <div class="absolute inset-0 bg-background/80 project-overlay opacity-0 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-8 backdrop-blur-sm">
+          <span class="text-primary-container font-headline font-bold uppercase tracking-widest text-xs mb-2">Institutional</span>
+          <h3 class="font-headline text-2xl font-black uppercase tracking-tighter mb-1">CITY CENTRAL LIBRARY</h3>
+          <p class="font-body text-on-surface/70 uppercase tracking-widest text-xs">Denver, CO</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-surface-container-low py-24 px-8 overflow-hidden relative">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+      <div class="max-w-xl">
+        <h2 class="font-headline text-5xl font-black uppercase tracking-tighter leading-tight mb-6">Build your legacy <br/>with <span class="text-primary-container">EASTWAY</span></h2>
+        <p class="font-body text-on-surface/70 text-lg uppercase tracking-wider leading-relaxed">From foundational industrial complexes to landmark commercial towers, we engineer the future of infrastructure.</p>
+      </div>
+      <div class="flex flex-col gap-4 w-full md:w-auto">
+        <a href="Homepage.html#contact" class="bg-primary-container text-on-primary-container px-12 py-5 font-headline font-black uppercase tracking-widest text-sm hover:brightness-110 transition-all active:scale-95 inline-block text-center">Start a Consultation</a>
+        <a href="Services.html" class="border border-outline-variant px-12 py-5 font-headline font-bold uppercase tracking-widest text-sm hover:bg-surface-container-high transition-colors inline-block text-center">Our Services</a>
+      </div>
+    </div>
+    <!-- Background Decorative Text -->
+    <div class="absolute bottom-0 right-0 font-headline font-black text-[20vw] leading-none text-surface-container-high/20 select-none pointer-events-none translate-y-1/2 translate-x-1/4">
+      BUILT
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer id="contact" class="bg-[#0E0E0E] w-full py-16 px-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-3xl font-black text-[#E5E2E1] mb-8 font-headline tracking-tighter">EASTWAY</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
+      <div>
+        <h5 class="text-[#E61F38] font-headline font-bold uppercase tracking-widest text-xs mb-6">Get in Touch</h5>
+        <ul class="space-y-4 font-['Inter'] text-sm text-[#E5E2E1]">
+          <li class="hover:text-[#E61F38] transition-colors cursor-pointer flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">mail</span> info@eastwayconstruction.com
+          </li>
+          <li class="hover:text-[#E61F38] transition-colors cursor-pointer flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">call</span> +1 (800) 555-0100
+          </li>
+          <li class="hover:text-[#E61F38] transition-colors cursor-pointer flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">schedule</span> Mon – Fri: 7am – 5pm
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-[#E61F38] font-headline font-bold uppercase tracking-widest text-xs mb-6">Head Office</h5>
+        <p class="font-['Inter'] text-sm text-[#E5E2E1]/70 leading-relaxed">
+          1200 Industrial Parkway<br/>
+          Suite 400<br/>
+          Chicago, IL 60601
+        </p>
+      </div>
+      <div>
+        <h5 class="text-[#E61F38] font-headline font-bold uppercase tracking-widest text-xs mb-6">Regional Offices</h5>
+        <ul class="space-y-2 font-['Inter'] text-sm text-[#E5E2E1]/70">
+          <li class="hover:text-[#E61F38] transition-transform hover:translate-x-1 duration-200 cursor-pointer">Houston, TX</li>
+          <li class="hover:text-[#E61F38] transition-transform hover:translate-x-1 duration-200 cursor-pointer">Phoenix, AZ</li>
+          <li class="hover:text-[#E61F38] transition-transform hover:translate-x-1 duration-200 cursor-pointer">Charlotte, NC</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="font-['Inter'] text-xs text-[#E5E2E1]/40 uppercase tracking-widest">
+        &copy; 2026 EASTWAY CONSTRUCTION. ALL RIGHTS RESERVED.
+      </div>
+      <div class="flex gap-8">
+        <a class="font-['Inter'] text-xs text-[#E5E2E1]/40 hover:text-[#E61F38] transition-colors uppercase tracking-widest" href="#">Privacy Policy</a>
+        <a class="font-['Inter'] text-xs text-[#E5E2E1]/40 hover:text-[#E61F38] transition-colors uppercase tracking-widest" href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
