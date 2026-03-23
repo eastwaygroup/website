@@ -2,72 +2,73 @@
 <html class="dark" lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Project Detail | EASTWAY CONSTRUCTION</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Residence at Islington | EASTWAY CONSTRUCTION</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<script>
+<script id="tailwind-config">
   tailwind.config = {
-    darkMode: 'class',
+    darkMode: "class",
     theme: {
       extend: {
         colors: {
-          'primary-container': '#e61f38',
-          'on-tertiary': '#303030',
-          'on-surface-variant': '#e6bdbb',
-          'outline': '#ad8886',
-          'inverse-on-surface': '#313030',
-          'secondary-fixed': '#feddb8',
-          'on-surface': '#e5e2e1',
-          'tertiary-fixed-dim': '#c7c6c6',
-          'outline-variant': '#5d3f3e',
-          'on-primary': '#680010',
-          'surface-dim': '#131313',
-          'secondary-fixed-dim': '#e1c19e',
-          'on-secondary-fixed': '#291803',
-          'on-background': '#e5e2e1',
-          'tertiary': '#c7c6c6',
-          'primary-fixed-dim': '#ffb3b0',
-          'on-primary-fixed-variant': '#92001b',
-          'on-error-container': '#ffdad6',
-          'on-primary-fixed': '#410007',
-          'on-tertiary-fixed': '#1b1c1c',
-          'secondary': '#e1c19e',
-          'surface-bright': '#393939',
-          'on-secondary-container': '#cfb08e',
-          'secondary-container': '#594328',
-          'on-error': '#690005',
-          'on-secondary-fixed-variant': '#594328',
-          'surface-tint': '#ffb3b0',
-          'background': '#131313',
-          'error': '#ffb4ab',
-          'on-tertiary-container': '#ffffff',
-          'on-primary-container': '#ffffff',
-          'tertiary-fixed': '#e4e2e2',
-          'surface-container-highest': '#353535',
-          'tertiary-container': '#767676',
-          'surface-variant': '#353535',
-          'on-secondary': '#402d14',
-          'surface': '#131313',
-          'surface-container-high': '#2a2a2a',
-          'surface-container-lowest': '#0e0e0e',
-          'primary-fixed': '#ffdad8',
-          'error-container': '#93000a',
-          'surface-container': '#20201f',
-          'primary': '#ffb3b0',
-          'inverse-surface': '#e5e2e1',
-          'inverse-primary': '#bf0027',
-          'surface-container-low': '#1c1b1b',
-          'on-tertiary-fixed-variant': '#464747'
+          "primary-container": "#e61f38",
+          "on-tertiary": "#303030",
+          "on-surface-variant": "#e6bdbb",
+          "outline": "#ad8886",
+          "inverse-on-surface": "#313030",
+          "secondary-fixed": "#feddb8",
+          "on-surface": "#e5e2e1",
+          "tertiary-fixed-dim": "#c7c6c6",
+          "outline-variant": "#5d3f3e",
+          "on-primary": "#680010",
+          "surface-dim": "#131313",
+          "secondary-fixed-dim": "#e1c19e",
+          "on-secondary-fixed": "#291803",
+          "on-background": "#e5e2e1",
+          "tertiary": "#c7c6c6",
+          "primary-fixed-dim": "#ffb3b0",
+          "on-primary-fixed-variant": "#92001b",
+          "on-error-container": "#ffdad6",
+          "on-primary-fixed": "#410007",
+          "on-tertiary-fixed": "#1b1c1c",
+          "secondary": "#e1c19e",
+          "surface-bright": "#393939",
+          "on-secondary-container": "#cfb08e",
+          "secondary-container": "#594328",
+          "on-error": "#690005",
+          "on-secondary-fixed-variant": "#594328",
+          "surface-tint": "#ffb3b0",
+          "background": "#131313",
+          "error": "#ffb4ab",
+          "on-tertiary-container": "#ffffff",
+          "on-primary-container": "#ffffff",
+          "tertiary-fixed": "#e4e2e2",
+          "surface-container-highest": "#353535",
+          "tertiary-container": "#767676",
+          "surface-variant": "#353535",
+          "on-secondary": "#402d14",
+          "surface": "#131313",
+          "surface-container-high": "#2a2a2a",
+          "surface-container-lowest": "#0e0e0e",
+          "primary-fixed": "#ffdad8",
+          "error-container": "#93000a",
+          "surface-container": "#20201f",
+          "primary": "#ffb3b0",
+          "inverse-surface": "#e5e2e1",
+          "inverse-primary": "#bf0027",
+          "surface-container-low": "#1c1b1b",
+          "on-tertiary-fixed-variant": "#464747"
         },
         fontFamily: {
-          headline: ['Plus Jakarta Sans'],
-          body: ['Inter']
+          "headline": ["Plus Jakarta Sans"],
+          "body": ["Inter"],
+          "label": ["Inter"]
         },
-        borderRadius: {'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem'},
-      }
-    }
+        borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+      },
+    },
   }
 </script>
 <style>
@@ -81,17 +82,17 @@
 <!-- TopAppBar -->
 <header class="bg-[#131313]/85 backdrop-blur-md fixed top-0 w-full z-50">
   <nav class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
-    <a href="Homepage.html" class="text-2xl font-black text-[#E5E2E1] tracking-tighter font-headline">EASTWAY</a>
+    <a href="../Homepage.html" class="text-2xl font-black text-[#E5E2E1] tracking-tighter font-headline">EASTWAY</a>
     <!-- Desktop Nav -->
     <div class="hidden md:flex items-center space-x-8 font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider">
-      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Homepage.html">Home</a>
-      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="About.html">About</a>
-      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Services.html">Services</a>
-      <a class="text-[#E61F38] border-b-2 border-[#E61F38] pb-1" href="Portfolio.html">Portfolio</a>
-      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Homepage.html#contact">Contact</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../Homepage.html">Home</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../About.html">About</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../Services.html">Services</a>
+      <a class="text-[#E61F38] border-b-2 border-[#E61F38] pb-1" href="../Portfolio.html">Portfolio</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../Homepage.html#contact">Contact</a>
     </div>
     <!-- Desktop CTA -->
-    <a href="Homepage.html#contact" class="hidden md:inline-block bg-primary-container text-white px-6 py-2 font-headline font-bold uppercase tracking-widest text-xs transition-transform active:scale-95">GET A QUOTE</a>
+    <a href="../Homepage.html#contact" class="hidden md:inline-block bg-primary-container text-white px-6 py-2 font-headline font-bold uppercase tracking-widest text-xs transition-transform active:scale-95">GET A QUOTE</a>
     <!-- Mobile Hamburger -->
     <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden flex flex-col justify-center gap-1.5 p-1" aria-label="Toggle navigation">
       <span class="w-6 h-0.5 bg-[#E5E2E1] block"></span>
@@ -102,12 +103,12 @@
   <!-- Mobile Menu -->
   <div id="mobileMenu" class="hidden md:hidden bg-[#131313] border-t border-white/10 px-8 py-6">
     <div class="flex flex-col gap-5 font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider">
-      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Homepage.html">Home</a>
-      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="About.html">About</a>
-      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Services.html">Services</a>
-      <a class="text-[#E61F38]" href="Portfolio.html">Portfolio</a>
-      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="Homepage.html#contact">Contact</a>
-      <a href="Homepage.html#contact" class="bg-[#e61f38] text-white px-6 py-3 tracking-widest text-xs text-center mt-2 inline-block">GET A QUOTE</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../Homepage.html">Home</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../About.html">About</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../Services.html">Services</a>
+      <a class="text-[#E61F38]" href="../Portfolio.html">Portfolio</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../Homepage.html#contact">Contact</a>
+      <a href="../Homepage.html#contact" class="bg-[#e61f38] text-white px-6 py-3 tracking-widest text-xs text-center mt-2 inline-block">GET A QUOTE</a>
     </div>
   </div>
 </header>
@@ -116,16 +117,23 @@
   <!-- Project Hero Slideshow -->
   <header class="relative h-[700px] w-full overflow-hidden flex items-end pb-24 px-8 md:px-16">
     <div class="absolute inset-0 z-0" id="slideshow">
-      <!-- Slides — add or replace src values with your own project photos -->
+      <!-- Slides -->
       <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-100">
-        <img alt="Apex Logistics Hub — photo 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBasfMzv9O3j60eGe-tuUfjBXIu4UazgldJT7-KE8cO-e9twZhNQEa4kiLWECbAfZdsSoLzbZ_WAbtkltFnoz2r-gDxUNVKfW3CIJ508wWozTQRgmalHsTaQarGkSU7cyx9fFXpodj9n04KUz77z9i7xPMP6XFnWdMsrG0B21HjBaCX15aY0MtbIcS6XXIyyUjAFNWE_V3OPQFZ5aITATBn58J01xj72ucJZiblrkp8hzBlGp5dw-Ycwqit-dkny2N80JYrJ_NWXUFR"/>
+        <img alt="Residence at Islington — exterior" class="w-full h-full object-cover" src="../media/portfolio/Residence at islington/residence at islington.PNG"/>
       </div>
       <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
-        <img alt="Apex Logistics Hub — photo 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnuDLeeEgpsnhEPBUMXVCiQAfIpYg5G_YUKX-UlW5UMdnBoy3bHG8PiFTQyA0PMnX8IMJxEmh55Yy-7C3Oe4DpDfoVQ3zcpnbfFbIS2jyqRwkFOhBupZo2Tb3qU0ZUQFFuiGcA3Oc6yVtqsSyNzxi3TevE7SNIqRAzrlFf0xAIjz705IO9esHbZG-vmNZ4MHXFvbITD5jLE5OMZkOJkqj7StI9_J4U0-y61KSTK_KUWZPpMofmIYOQ_k3Si7NKv5fzxeIZLvf3C2BE"/>
+        <img alt="Residence at Islington — photo 2" class="w-full h-full object-cover" src="../media/portfolio/Residence at islington/IMG_3044.jpg"/>
       </div>
       <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
-        <img alt="Apex Logistics Hub — photo 3" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfxf9mq9ZJ2ir2YXqq50W9uIwNwnPgyCorQvBiDgqRTJCVs-Trh0hUVQlWEtrjyvmroCMdI9lFHlPFmHtpbmO9Rj7Mz9qdol4Q5Tm5YMIw5_-AN7uLxFfTmngVk3GmaQpOwWn-w-rnZ9nUm552f4cmG0-Yapt13mD-YLPnCFBQGuom8SU9qi_ytmxEJaeBkezGsp7Mkwbexr_fkv_9LNstWDEvqy5CSrClH5KHvUfXpeI1dACWhjDJEx0FhS2y4_PQgYOFRpN5rcqg"/>
+        <img alt="Residence at Islington — photo 3" class="w-full h-full object-cover" src="../media/portfolio/Residence at islington/IMG_3045.jpg"/>
       </div>
+      <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+        <img alt="Residence at Islington — photo 4" class="w-full h-full object-cover" src="../media/portfolio/Residence at islington/IMG_3312.heic"/>
+      </div>
+      <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+        <img alt="Residence at Islington — photo 5" class="w-full h-full object-cover" src="../media/portfolio/Residence at islington/IMG_3341.heic"/>
+      </div>
+
       <div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
 
       <!-- Prev / Next arrows -->
@@ -147,7 +155,6 @@
         let current = 0;
         let timer;
 
-        // Build dots
         slides.forEach((_, i) => {
           const dot = document.createElement('button');
           dot.className = 'w-2 h-2 rounded-full transition-all ' + (i === 0 ? 'bg-[#e61f38] w-6' : 'bg-white/40');
@@ -160,25 +167,25 @@
           dotsContainer.children[current].className = 'w-2 h-2 rounded-full transition-all bg-white/40';
           current = (index + slides.length) % slides.length;
           slides[current].style.opacity = '1';
-          dotsContainer.children[current].className = 'w-2 h-2 rounded-full transition-all bg-[#e61f38]' + ' w-6';
+          dotsContainer.children[current].className = 'w-2 h-2 rounded-full transition-all bg-[#e61f38] w-6';
           resetTimer();
         }
 
         function moveSlide(dir) { goTo(current + dir); }
         function resetTimer() { clearInterval(timer); timer = setInterval(() => goTo(current + 1), 5000); }
 
-        // Expose for inline onclick
         window.moveSlide = moveSlide;
         resetTimer();
       })();
     </script>
+
     <div class="relative z-10 max-w-5xl">
-      <a href="Portfolio.html" class="inline-flex items-center gap-2 text-on-surface/50 hover:text-primary-container transition-colors font-headline font-bold text-xs tracking-widest uppercase mb-6">
+      <a href="../Portfolio.html" class="inline-flex items-center gap-2 text-on-surface/50 hover:text-primary-container transition-colors font-headline font-bold text-xs tracking-widest uppercase mb-6">
         <span class="material-symbols-outlined text-sm">arrow_back</span> Back to Portfolio
       </a>
-      <p class="text-primary-container font-headline font-bold uppercase tracking-[0.3em] text-sm mb-4">Featured Project — Industrial</p>
+      <p class="text-primary-container font-headline font-bold uppercase tracking-[0.3em] text-sm mb-4">Featured Project — Residential</p>
       <h1 class="text-6xl md:text-8xl font-headline font-extrabold text-on-surface tracking-tighter leading-[0.9] uppercase mb-8">
-        APEX LOGISTICS HUB
+        RESIDENCE AT ISLINGTON
       </h1>
     </div>
   </header>
@@ -196,42 +203,42 @@
             Project Overview
           </h2>
           <p class="text-lg leading-relaxed text-on-surface/80">
-            The Apex Logistics Hub is a 1.2 million square foot industrial distribution facility located in the heart of Chicago's logistics corridor. Delivered on schedule and within budget, this landmark project required the coordination of over 400 trade workers across 18 months of continuous construction.
+            The Residence at Islington is a custom residential project situated in the established Islington neighbourhood of Toronto, Ontario. EASTWAY was brought in to deliver a high-quality home build that fits seamlessly within the mature, tree-lined character of this sought-after Toronto community.
           </p>
           <p class="text-lg leading-relaxed text-on-surface/80 mt-6">
-            EASTWAY served as the general contractor and construction manager, overseeing all phases from groundbreaking through final commissioning. The facility features state-of-the-art loading dock infrastructure, automated sortation systems, and energy-efficient MEP installations.
+            From initial site preparation through to final finishing, our team managed every aspect of the construction process. The project required careful coordination with the surrounding urban environment, ensuring minimal disruption while maintaining the highest standards of craftsmanship and structural integrity.
           </p>
         </section>
 
         <section>
           <h2 class="text-3xl font-headline font-extrabold uppercase tracking-tight mb-6 flex items-center gap-4">
             <span class="w-8 h-0.5 bg-primary-container inline-block"></span>
-            Scope Highlights
+            Scope of Work
           </h2>
           <ul class="space-y-4 text-on-surface/80">
             <li class="flex items-start gap-4">
               <span class="material-symbols-outlined text-primary-container mt-0.5 flex-shrink-0">check_circle</span>
-              Pre-construction planning, value engineering, and site coordination
+              Site preparation, demolition of existing structure, and foundation work
             </li>
             <li class="flex items-start gap-4">
               <span class="material-symbols-outlined text-primary-container mt-0.5 flex-shrink-0">check_circle</span>
-              Structural steel erection — 8,400 tons of fabricated steel
+              Full structural framing, roofing, and exterior cladding
             </li>
             <li class="flex items-start gap-4">
               <span class="material-symbols-outlined text-primary-container mt-0.5 flex-shrink-0">check_circle</span>
-              Tilt-up concrete panel installation across 6 dock bays
+              Mechanical, electrical, and plumbing rough-in and finish
             </li>
             <li class="flex items-start gap-4">
               <span class="material-symbols-outlined text-primary-container mt-0.5 flex-shrink-0">check_circle</span>
-              Full MEP systems integration including 2MW electrical service
+              Custom interior finishes including millwork, tile, and hardwood flooring
             </li>
             <li class="flex items-start gap-4">
               <span class="material-symbols-outlined text-primary-container mt-0.5 flex-shrink-0">check_circle</span>
-              Site civil work: roads, utilities, stormwater management
+              Kitchen and bathroom installations to owner specifications
             </li>
             <li class="flex items-start gap-4">
               <span class="material-symbols-outlined text-primary-container mt-0.5 flex-shrink-0">check_circle</span>
-              Trade scheduling, quality control, and milestone delivery
+              Exterior landscaping, driveway, and final site restoration
             </li>
           </ul>
         </section>
@@ -239,27 +246,27 @@
         <section>
           <h2 class="text-3xl font-headline font-extrabold uppercase tracking-tight mb-6 flex items-center gap-4">
             <span class="w-8 h-0.5 bg-primary-container inline-block"></span>
-            Project Outcomes
+            Project Highlights
           </h2>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div class="bg-surface-container-low p-6 border-t-2 border-primary-container">
-              <div class="text-4xl font-black font-headline text-primary-container mb-2">18mo</div>
-              <div class="text-xs uppercase tracking-widest text-on-surface/50 font-bold">Delivery Timeline</div>
+              <div class="text-4xl font-black font-headline text-primary-container mb-2">Custom</div>
+              <div class="text-xs uppercase tracking-widest text-on-surface/50 font-bold">Build to Owner Spec</div>
             </div>
             <div class="bg-surface-container-low p-6 border-t-2 border-primary-container">
-              <div class="text-4xl font-black font-headline text-primary-container mb-2">1.2M</div>
-              <div class="text-xs uppercase tracking-widest text-on-surface/50 font-bold">Square Feet Built</div>
+              <div class="text-4xl font-black font-headline text-primary-container mb-2">Urban</div>
+              <div class="text-xs uppercase tracking-widest text-on-surface/50 font-bold">Infill Construction</div>
             </div>
             <div class="bg-surface-container-low p-6 border-t-2 border-primary-container">
-              <div class="text-4xl font-black font-headline text-primary-container mb-2">400+</div>
-              <div class="text-xs uppercase tracking-widest text-on-surface/50 font-bold">Trade Workers</div>
+              <div class="text-4xl font-black font-headline text-primary-container mb-2">Full</div>
+              <div class="text-xs uppercase tracking-widest text-on-surface/50 font-bold">Turnkey Delivery</div>
             </div>
           </div>
         </section>
 
         <div class="flex gap-4 flex-wrap pt-4">
-          <a href="Portfolio.html" class="bg-primary-container text-white px-8 py-4 font-headline font-bold uppercase tracking-widest text-sm hover:brightness-110 transition-all active:scale-95 inline-block">Back to Portfolio</a>
-          <a href="Homepage.html#contact" class="border border-outline-variant/40 px-8 py-4 font-headline font-bold uppercase tracking-widest text-sm hover:bg-surface-container-high transition-colors inline-block">Start a Consultation</a>
+          <a href="../Portfolio.html" class="bg-primary-container text-white px-8 py-4 font-headline font-bold uppercase tracking-widest text-sm hover:brightness-110 transition-all active:scale-95 inline-block">Back to Portfolio</a>
+          <a href="../Homepage.html#contact" class="border border-outline-variant/40 px-8 py-4 font-headline font-bold uppercase tracking-widest text-sm hover:bg-surface-container-high transition-colors inline-block">Start a Consultation</a>
         </div>
       </div>
 
@@ -270,19 +277,19 @@
           <div class="space-y-6 text-on-surface/85">
             <div>
               <span class="block text-[10px] uppercase tracking-[0.2em] text-on-surface/40 font-bold mb-1">Sector</span>
-              <span class="text-lg font-headline font-bold">Industrial / Logistics</span>
+              <span class="text-lg font-headline font-bold">Residential</span>
             </div>
             <div>
               <span class="block text-[10px] uppercase tracking-[0.2em] text-on-surface/40 font-bold mb-1">Location</span>
-              <span class="text-lg font-headline font-bold">Chicago, Illinois</span>
+              <span class="text-lg font-headline font-bold">Islington, Toronto, Ontario</span>
             </div>
             <div>
               <span class="block text-[10px] uppercase tracking-[0.2em] text-on-surface/40 font-bold mb-1">Delivery Method</span>
               <span class="text-lg font-headline font-bold">General Contracting</span>
             </div>
             <div>
-              <span class="block text-[10px] uppercase tracking-[0.2em] text-on-surface/40 font-bold mb-1">Size</span>
-              <span class="text-lg font-headline font-bold">1.2M sq ft</span>
+              <span class="block text-[10px] uppercase tracking-[0.2em] text-on-surface/40 font-bold mb-1">Type</span>
+              <span class="text-lg font-headline font-bold">Custom Single-Family Home</span>
             </div>
             <div>
               <span class="block text-[10px] uppercase tracking-[0.2em] text-on-surface/40 font-bold mb-1">Status</span>
@@ -294,8 +301,8 @@
             <div class="flex flex-wrap gap-2">
               <span class="bg-surface-container-highest px-3 py-1 text-xs font-bold uppercase tracking-wider">Pre-Construction</span>
               <span class="bg-surface-container-highest px-3 py-1 text-xs font-bold uppercase tracking-wider">General Contracting</span>
-              <span class="bg-surface-container-highest px-3 py-1 text-xs font-bold uppercase tracking-wider">Civil Engineering</span>
               <span class="bg-surface-container-highest px-3 py-1 text-xs font-bold uppercase tracking-wider">MEP Solutions</span>
+              <span class="bg-surface-container-highest px-3 py-1 text-xs font-bold uppercase tracking-wider">Design-Build</span>
             </div>
           </div>
         </div>
@@ -335,9 +342,9 @@
       <div>
         <h5 class="text-[#E61F38] font-headline font-bold uppercase tracking-widest text-xs mb-6">Quick Links</h5>
         <ul class="space-y-2 font-['Inter'] text-sm text-[#E5E2E1]/70">
-          <li><a class="hover:text-[#E61F38] transition-colors" href="Portfolio.html">Portfolio</a></li>
-          <li><a class="hover:text-[#E61F38] transition-colors" href="Services.html">Services</a></li>
-          <li><a class="hover:text-[#E61F38] transition-colors" href="About.html">About Us</a></li>
+          <li><a class="hover:text-[#E61F38] transition-colors" href="../Portfolio.html">Portfolio</a></li>
+          <li><a class="hover:text-[#E61F38] transition-colors" href="../Services.html">Services</a></li>
+          <li><a class="hover:text-[#E61F38] transition-colors" href="../About.html">About Us</a></li>
         </ul>
       </div>
     </div>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Can Sports Center | EASTWAY CONSTRUCTION</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary-container": "#e61f38",
+          "on-tertiary": "#303030",
+          "on-surface-variant": "#e6bdbb",
+          "outline": "#ad8886",
+          "inverse-on-surface": "#313030",
+          "secondary-fixed": "#feddb8",
+          "on-surface": "#e5e2e1",
+          "tertiary-fixed-dim": "#c7c6c6",
+          "outline-variant": "#5d3f3e",
+          "on-primary": "#680010",
+          "surface-dim": "#131313",
+          "secondary-fixed-dim": "#e1c19e",
+          "on-secondary-fixed": "#291803",
+          "on-background": "#e5e2e1",
+          "tertiary": "#c7c6c6",
+          "primary-fixed-dim": "#ffb3b0",
+          "on-primary-fixed-variant": "#92001b",
+          "on-error-container": "#ffdad6",
+          "on-primary-fixed": "#410007",
+          "on-tertiary-fixed": "#1b1c1c",
+          "secondary": "#e1c19e",
+          "surface-bright": "#393939",
+          "on-secondary-container": "#cfb08e",
+          "secondary-container": "#594328",
+          "on-error": "#690005",
+          "on-secondary-fixed-variant": "#594328",
+          "surface-tint": "#ffb3b0",
+          "background": "#131313",
+          "error": "#ffb4ab",
+          "on-tertiary-container": "#ffffff",
+          "on-primary-container": "#ffffff",
+          "tertiary-fixed": "#e4e2e2",
+          "surface-container-highest": "#353535",
+          "tertiary-container": "#767676",
+          "surface-variant": "#353535",
+          "on-secondary": "#402d14",
+          "surface": "#131313",
+          "surface-container-high": "#2a2a2a",
+          "surface-container-lowest": "#0e0e0e",
+          "primary-fixed": "#ffdad8",
+          "error-container": "#93000a",
+          "surface-container": "#20201f",
+          "primary": "#ffb3b0",
+          "inverse-surface": "#e5e2e1",
+          "inverse-primary": "#bf0027",
+          "surface-container-low": "#1c1b1b",
+          "on-tertiary-fixed-variant": "#464747"
+        },
+        fontFamily: {
+          "headline": ["Plus Jakarta Sans"],
+          "body": ["Inter"],
+          "label": ["Inter"]
+        },
+        borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-white">
+
+<!-- TopAppBar -->
+<header class="bg-[#131313]/85 backdrop-blur-md fixed top-0 w-full z-50">
+  <nav class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
+    <a href="../Homepage.html" class="text-2xl font-black text-[#E5E2E1] tracking-tighter font-headline">EASTWAY</a>
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex items-center space-x-8 font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider">
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../Homepage.html">Home</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../About.html">About</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../Services.html">Services</a>
+      <a class="text-[#E61F38] border-b-2 border-[#E61F38] pb-1" href="../Portfolio.html">Portfolio</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../Homepage.html#contact">Contact</a>
+    </div>
+    <!-- Desktop CTA -->
+    <a href="../Homepage.html#contact" class="hidden md:inline-block bg-primary-container text-white px-6 py-2 font-headline font-bold uppercase tracking-widest text-xs transition-transform active:scale-95">GET A QUOTE</a>
+    <!-- Mobile Hamburger -->
+    <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden flex flex-col justify-center gap-1.5 p-1" aria-label="Toggle navigation">
+      <span class="w-6 h-0.5 bg-[#E5E2E1] block"></span>
+      <span class="w-6 h-0.5 bg-[#E5E2E1] block"></span>
+      <span class="w-6 h-0.5 bg-[#E5E2E1] block"></span>
+    </button>
+  </nav>
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-[#131313] border-t border-white/10 px-8 py-6">
+    <div class="flex flex-col gap-5 font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider">
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../Homepage.html">Home</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../About.html">About</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../Services.html">Services</a>
+      <a class="text-[#E61F38]" href="../Portfolio.html">Portfolio</a>
+      <a class="text-[#E5E2E1] hover:text-[#E61F38] transition-colors" href="../Homepage.html#contact">Contact</a>
+      <a href="../Homepage.html#contact" class="bg-[#e61f38] text-white px-6 py-3 tracking-widest text-xs text-center mt-2 inline-block">GET A QUOTE</a>
+    </div>
+  </div>
+</header>
+
+<main class="pt-24">
+  <!-- Project Hero Slideshow -->
+  <header class="relative h-[700px] w-full overflow-hidden flex items-end pb-24 px-8 md:px-16">
+    <div class="absolute inset-0 z-0" id="slideshow">
+      <!-- Slides -->
+      <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-100">
+        <img alt="Can Sports Center — exterior" class="w-full h-full object-cover" src="../media/portfolio/can sports center/can sports center.jpg"/>
+      </div>
+      <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+        <img alt="Can Sports Center — interior overview" class="w-full h-full object-cover" src="../media/portfolio/can sports center/IMG_3545.PNG"/>
+      </div>
+      <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+        <img alt="Can Sports Center — badminton courts" class="w-full h-full object-cover" src="../media/portfolio/can sports center/badminton 3.webp"/>
+      </div>
+      <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+        <img alt="Can Sports Center — basketball court" class="w-full h-full object-cover" src="../media/portfolio/can sports center/basketball 2.webp"/>
+      </div>
+      <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+        <img alt="Can Sports Center — gym facility" class="w-full h-full object-cover" src="../media/portfolio/can sports center/gym 2.webp"/>
+      </div>
+
+      <div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+
+      <!-- Prev / Next arrows -->
+      <button onclick="moveSlide(-1)" class="absolute left-6 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-[#e61f38] transition-colors p-3 flex items-center justify-center" aria-label="Previous image">
+        <span class="material-symbols-outlined text-white">chevron_left</span>
+      </button>
+      <button onclick="moveSlide(1)" class="absolute right-6 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-[#e61f38] transition-colors p-3 flex items-center justify-center" aria-label="Next image">
+        <span class="material-symbols-outlined text-white">chevron_right</span>
+      </button>
+
+      <!-- Dot indicators -->
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2" id="dots"></div>
+    </div>
+
+    <script>
+      (function () {
+        const slides = document.querySelectorAll('.slide');
+        const dotsContainer = document.getElementById('dots');
+        let current = 0;
+        let timer;
+
+        slides.forEach((_, i) => {
+          const dot = document.createElement('button');
+          dot.className = 'w-2 h-2 rounded-full transition-all ' + (i === 0 ? 'bg-[#e61f38] w-6' : 'bg-white/40');
+          dot.addEventListener('click', () => goTo(i));
+          dotsContainer.appendChild(dot);
+        });
+
+        function goTo(index) {
+          slides[current].style.opacity = '0';
+          dotsContainer.children[current].className = 'w-2 h-2 rounded-full transition-all bg-white/40';
+          current = (index + slides.length) % slides.length;
+          slides[current].style.opacity = '1';
+          dotsContainer.children[current].className = 'w-2 h-2 rounded-full transition-all bg-[#e61f38] w-6';
+          resetTimer();
+        }
+
+        function moveSlide(dir) { goTo(current + dir); }
+        function resetTimer() { clearInterval(timer); timer = setInterval(() => goTo(current + 1), 5000); }
+
+        window.moveSlide = moveSlide;
+        resetTimer();
+      })();
+    </script>
+
+    <div class="relative z-10 max-w-5xl">
+      <a href="../Portfolio.html" class="inline-flex items-center gap-2 text-on-surface/50 hover:text-primary-container transition-colors font-headline font-bold text-xs tracking-widest uppercase mb-6">
+        <span class="material-symbols-outlined text-sm">arrow_back</span> Back to Portfolio
+      </a>
+      <p class="text-primary-container font-headline font-bold uppercase tracking-[0.3em] text-sm mb-4">Featured Project — Commercial</p>
+      <h1 class="text-6xl md:text-8xl font-headline font-extrabold text-on-surface tracking-tighter leading-[0.9] uppercase mb-8">
+        CAN SPORTS CENTER
+      </h1>
+    </div>
+  </header>
+
+  <!-- Project Content -->
+  <div class="px-8 md:px-16 py-24 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+      <!-- Main Content -->
+      <div class="lg:col-span-8 space-y-16">
+
+        <section>
+          <h2 class="text-3xl font-headline font-extrabold uppercase tracking-tight mb-6 flex items-center gap-4">
+            <span class="w-8 h-0.5 bg-primary-container inline-block"></span>
+            Project Overview
+          </h2>
+          <p class="text-lg leading-relaxed text-on-surface/80">
+            Can Sports Center is a premier multi-sport indoor facility located at 1443 Denison Street in Markham, Ontario. EASTWAY was engaged to transform the existing commercial space into a state-of-the-art sports and fitness destination serving athletes and recreational players of all ages across the Greater Toronto Area.
+          </p>
+          <p class="text-lg leading-relaxed text-on-surface/80 mt-6">
+            The project required comprehensive interior construction, including the build-out of dedicated court surfaces for badminton, basketball, and pickleball, alongside a full fitness and gym facility. Our team managed all trades from flooring and structural partitions through to mechanical, electrical, and lighting systems optimized for athletic performance.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-3xl font-headline font-extrabold uppercase tracking-tight mb-6 flex items-center gap-4">
+            <span class="w-8 h-0.5 bg-primary-container inline-block"></span>
+            Scope of Work
+          </h2>
+          <ul class="space-y-4 text-on-surface/80">
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-primary-container mt-0.5 flex-shrink-0">check_circle</span>
+              Full interior demolition and structural preparation of commercial shell space
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-primary-container mt-0.5 flex-shrink-0">check_circle</span>
+              Professional-grade badminton court construction with regulation flooring and net systems
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-primary-container mt-0.5 flex-shrink-0">check_circle</span>
+              Basketball and pickleball court installation with sport-specific surface materials
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-primary-container mt-0.5 flex-shrink-0">check_circle</span>
+              Gym and fitness area build-out including rubber flooring, equipment anchoring, and mirrors
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-primary-container mt-0.5 flex-shrink-0">check_circle</span>
+              High-bay LED lighting installation calibrated for each sport zone
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-primary-container mt-0.5 flex-shrink-0">check_circle</span>
+              HVAC systems, washroom facilities, reception area, and change rooms
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-3xl font-headline font-extrabold uppercase tracking-tight mb-6 flex items-center gap-4">
+            <span class="w-8 h-0.5 bg-primary-container inline-block"></span>
+            Project Highlights
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div class="bg-surface-container-low p-6 border-t-2 border-primary-container">
+              <div class="text-4xl font-black font-headline text-primary-container mb-2">10+</div>
+              <div class="text-xs uppercase tracking-widest text-on-surface/50 font-bold">Courts Built</div>
+            </div>
+            <div class="bg-surface-container-low p-6 border-t-2 border-primary-container">
+              <div class="text-4xl font-black font-headline text-primary-container mb-2">3</div>
+              <div class="text-xs uppercase tracking-widest text-on-surface/50 font-bold">Sports Accommodated</div>
+            </div>
+            <div class="bg-surface-container-low p-6 border-t-2 border-primary-container">
+              <div class="text-4xl font-black font-headline text-primary-container mb-2">24/7</div>
+              <div class="text-xs uppercase tracking-widest text-on-surface/50 font-bold">Facility Operation</div>
+            </div>
+          </div>
+        </section>
+
+        <div class="flex gap-4 flex-wrap pt-4">
+          <a href="../Portfolio.html" class="bg-primary-container text-white px-8 py-4 font-headline font-bold uppercase tracking-widest text-sm hover:brightness-110 transition-all active:scale-95 inline-block">Back to Portfolio</a>
+          <a href="../Homepage.html#contact" class="border border-outline-variant/40 px-8 py-4 font-headline font-bold uppercase tracking-widest text-sm hover:bg-surface-container-high transition-colors inline-block">Start a Consultation</a>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-4">
+        <div class="bg-surface-container-low p-8 border-l-4 border-primary-container sticky top-28">
+          <h3 class="text-xl font-headline font-extrabold uppercase tracking-tight mb-8">Project Details</h3>
+          <div class="space-y-6 text-on-surface/85">
+            <div>
+              <span class="block text-[10px] uppercase tracking-[0.2em] text-on-surface/40 font-bold mb-1">Sector</span>
+              <span class="text-lg font-headline font-bold">Commercial / Sports &amp; Recreation</span>
+            </div>
+            <div>
+              <span class="block text-[10px] uppercase tracking-[0.2em] text-on-surface/40 font-bold mb-1">Location</span>
+              <span class="text-lg font-headline font-bold">Markham, Ontario</span>
+            </div>
+            <div>
+              <span class="block text-[10px] uppercase tracking-[0.2em] text-on-surface/40 font-bold mb-1">Delivery Method</span>
+              <span class="text-lg font-headline font-bold">General Contracting</span>
+            </div>
+            <div>
+              <span class="block text-[10px] uppercase tracking-[0.2em] text-on-surface/40 font-bold mb-1">Address</span>
+              <span class="text-lg font-headline font-bold">1443 Denison St, Markham ON</span>
+            </div>
+            <div>
+              <span class="block text-[10px] uppercase tracking-[0.2em] text-on-surface/40 font-bold mb-1">Status</span>
+              <span class="text-lg font-headline font-bold text-primary-container">Completed</span>
+            </div>
+          </div>
+          <div class="mt-10 pt-8 border-t border-outline-variant/20">
+            <p class="text-xs uppercase tracking-widest text-on-surface/40 font-bold mb-4">Services Used</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-surface-container-highest px-3 py-1 text-xs font-bold uppercase tracking-wider">Pre-Construction</span>
+              <span class="bg-surface-container-highest px-3 py-1 text-xs font-bold uppercase tracking-wider">General Contracting</span>
+              <span class="bg-surface-container-highest px-3 py-1 text-xs font-bold uppercase tracking-wider">MEP Solutions</span>
+              <span class="bg-surface-container-highest px-3 py-1 text-xs font-bold uppercase tracking-wider">Design-Build</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer id="contact" class="bg-[#0E0E0E] w-full py-16 px-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-3xl font-black text-[#E5E2E1] mb-8 font-headline tracking-tighter">EASTWAY</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
+      <div>
+        <h5 class="text-[#E61F38] font-headline font-bold uppercase tracking-widest text-xs mb-6">Get in Touch</h5>
+        <ul class="space-y-4 font-['Inter'] text-sm text-[#E5E2E1]">
+          <li class="hover:text-[#E61F38] transition-colors cursor-pointer flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">mail</span> info@eastwayconstruction.com
+          </li>
+          <li class="hover:text-[#E61F38] transition-colors cursor-pointer flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">call</span> +1 (800) 555-0100
+          </li>
+          <li class="hover:text-[#E61F38] transition-colors cursor-pointer flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">schedule</span> Mon – Fri: 7am – 5pm
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-[#E61F38] font-headline font-bold uppercase tracking-widest text-xs mb-6">Head Office</h5>
+        <p class="font-['Inter'] text-sm text-[#E5E2E1]/70 leading-relaxed">
+          1200 Industrial Parkway<br/>
+          Suite 400<br/>
+          Chicago, IL 60601
+        </p>
+      </div>
+      <div>
+        <h5 class="text-[#E61F38] font-headline font-bold uppercase tracking-widest text-xs mb-6">Quick Links</h5>
+        <ul class="space-y-2 font-['Inter'] text-sm text-[#E5E2E1]/70">
+          <li><a class="hover:text-[#E61F38] transition-colors" href="../Portfolio.html">Portfolio</a></li>
+          <li><a class="hover:text-[#E61F38] transition-colors" href="../Services.html">Services</a></li>
+          <li><a class="hover:text-[#E61F38] transition-colors" href="../About.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="font-['Inter'] text-xs text-[#E5E2E1]/40 uppercase tracking-widest">
+        &copy; 2026 EASTWAY CONSTRUCTION. ALL RIGHTS RESERVED.
+      </div>
+      <div class="flex gap-8">
+        <a class="font-['Inter'] text-xs text-[#E5E2E1]/40 hover:text-[#E61F38] transition-colors uppercase tracking-widest" href="#">Privacy Policy</a>
+        <a class="font-['Inter'] text-xs text-[#E5E2E1]/40 hover:text-[#E61F38] transition-colors uppercase tracking-widest" href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
