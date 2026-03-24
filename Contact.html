@@ -451,12 +451,13 @@ function showError(id, show) {
   if (el) el.classList.toggle('hidden', !show);
 }
 
-function handleSubmit(e) {
+async function handleSubmit(e) {
   e.preventDefault();
   let valid = true;
 
   const fullName = document.getElementById('fullName').value.trim();
   const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('phone').value.trim();
   const province = document.getElementById('province').value;
   const city = document.getElementById('city').value;
   const projectType = document.getElementById('projectType').value;
@@ -484,15 +485,39 @@ function handleSubmit(e) {
 
   if (!valid) return;
 
-  // Show success banner & reset form
-  document.getElementById('quoteForm').reset();
-  document.getElementById('city').disabled = true;
-  document.getElementById('city').innerHTML = '<option value="" disabled selected>Select Province first</option>';
-  document.getElementById('charCount').textContent = '0 / 1000';
+  // Disable submit button while sending
+  const submitBtn = e.target.querySelector('button[type="submit"]');
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = '<span style="opacity:0.6">SENDING...</span>';
 
-  const banner = document.getElementById('successBanner');
-  banner.style.display = 'block';
-  banner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  try {
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ fullName, email, phone, province, city, projectType, description }),
+    });
+
+    if (!res.ok) {
+      const data = await res.json();
+      throw new Error(data.error || 'Something went wrong.');
+    }
+
+    // Success — reset form
+    document.getElementById('quoteForm').reset();
+    document.getElementById('city').disabled = true;
+    document.getElementById('city').innerHTML = '<option value="" disabled selected>Select Province first</option>';
+    document.getElementById('charCount').textContent = '0 / 1000';
+
+    const banner = document.getElementById('successBanner');
+    banner.style.display = 'block';
+    banner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+  } catch (err) {
+    alert('Error: ' + err.message + '\n\nPlease try again or email us directly at projects@eastwaygroup.ca');
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = 'SUBMIT REQUEST <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>';
+  }
 }
 </script>
 
