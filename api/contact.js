@@ -21,8 +21,8 @@ module.exports = async function handler(req, res) {
 
   try {
     await resend.emails.send({
-      from: 'EASTWAY Quote Form <onboarding@resend.dev>',
-      to: process.env.TO_EMAIL || 'projects@eastwaygroup.ca',
+      from: 'EASTWAY Quote Form <noreply@eastwaygroup.ca>',
+      to: 'projects@eastwaygroup.ca',
       replyTo: email,
       subject: `New Quote Request — ${projectType.charAt(0).toUpperCase() + projectType.slice(1)} Project from ${fullName}`,
       html: `
