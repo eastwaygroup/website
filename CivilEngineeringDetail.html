@@ -31,32 +31,8 @@
 </head>
 <body class="bg-background text-on-surface font-body">
 
-<nav class="fixed top-0 w-full z-50 bg-[#0D1A13]/85 backdrop-blur-md">
-  <div class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
-    <a href="index.html" class="text-2xl font-black text-[#F5F0E8] tracking-tighter uppercase font-headline">EASTWAY</a>
-    <div class="hidden md:flex items-center space-x-8 font-headline font-bold uppercase tracking-wider text-sm">
-      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="index.html">Home</a>
-      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="About.html">About</a>
-      <a class="text-[#D0AC6E] border-b-2 border-[#D0AC6E] pb-1" href="Services.html">Services</a>
-      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Portfolio.html">Portfolio</a>
-      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Contact.html">Contact</a>
-    </div>
-    <a href="Contact.html" class="hidden md:inline-block bg-[#D0AC6E] text-[#1C3529] px-6 py-2 font-headline font-bold text-xs tracking-widest hover:brightness-110 active:scale-95 transition-all">GET A QUOTE</a>
-    <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden flex flex-col justify-center gap-1.5 p-1">
-      <span class="w-6 h-0.5 bg-[#F5F0E8] block"></span><span class="w-6 h-0.5 bg-[#F5F0E8] block"></span><span class="w-6 h-0.5 bg-[#F5F0E8] block"></span>
-    </button>
-  </div>
-  <div id="mobileMenu" class="hidden md:hidden bg-[#0D1A13] border-t border-white/10 px-8 py-6">
-    <div class="flex flex-col gap-5 font-headline font-bold uppercase tracking-wider text-sm">
-      <a class="text-[#F5F0E8] hover:text-[#D0AC6E]" href="index.html">Home</a>
-      <a class="text-[#F5F0E8] hover:text-[#D0AC6E]" href="About.html">About</a>
-      <a class="text-[#D0AC6E]" href="Services.html">Services</a>
-      <a class="text-[#F5F0E8] hover:text-[#D0AC6E]" href="Portfolio.html">Portfolio</a>
-      <a class="text-[#F5F0E8] hover:text-[#D0AC6E]" href="Contact.html">Contact</a>
-      <a href="Contact.html" class="bg-[#D0AC6E] text-[#1C3529] px-6 py-3 tracking-widest text-xs text-center mt-2 inline-block">GET A QUOTE</a>
-    </div>
-  </div>
-</nav>
+<div id="nav-root"></div>
+<script src="components/nav.js"></script>
 
 <main class="pt-[88px]">
   <section class="relative h-[716px] flex items-center overflow-hidden">
