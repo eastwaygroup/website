@@ -66,7 +66,14 @@
     box-shadow: 0 0 0 1px #D0AC6E;
   }
   .form-field::placeholder {
-    color: #5A7A64;
+    color: #B8D4C0;
+  }
+  .form-field:-webkit-autofill,
+  .form-field:-webkit-autofill:hover,
+  .form-field:-webkit-autofill:focus {
+    -webkit-text-fill-color: #F5F0E8;
+    -webkit-box-shadow: 0 0 0px 1000px #121E17 inset;
+    transition: background-color 5000s ease-in-out 0s;
   }
   .form-field option {
     background: #121E17;
