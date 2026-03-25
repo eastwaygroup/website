@@ -1,8 +1,8 @@
-import { Resend } from 'resend';
+const { Resend } = require('resend');
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
@@ -22,7 +22,7 @@ export default async function handler(req, res) {
   try {
     await resend.emails.send({
       from: 'EASTWAY Quote Form <onboarding@resend.dev>',
-      to: 'projects@eastwaygroup.ca',
+      to: process.env.TO_EMAIL || 'projects@eastwaygroup.ca',
       replyTo: email,
       subject: `New Quote Request — ${projectType.charAt(0).toUpperCase() + projectType.slice(1)} Project from ${fullName}`,
       html: `
@@ -86,4 +86,4 @@ export default async function handler(req, res) {
     console.error('Resend error:', error);
     return res.status(500).json({ error: 'Failed to send email. Please try again.' });
   }
-}
+};
