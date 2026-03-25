@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Design-Build | EASTWAY CONSTRUCTION</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary-container": "#D0AC6E",
+          "on-primary-container": "#1C3529",
+          "background": "#0D1A13",
+          "surface": "#0D1A13",
+          "surface-container": "#1C3529",
+          "surface-container-low": "#121E17",
+          "surface-container-high": "#243D2F",
+          "surface-container-highest": "#2D4A38",
+          "surface-container-lowest": "#0A1510",
+          "on-surface": "#F5F0E8",
+          "on-surface-variant": "#B8D4C0",
+          "outline-variant": "#2D4A38",
+          "outline": "#5A7A64",
+        },
+        fontFamily: { "headline": ["Plus Jakarta Sans"], "body": ["Inter"] },
+        borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem"},
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-[#0D1A13]/85 backdrop-blur-md">
+  <div class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
+    <a href="index.html" class="text-2xl font-black text-[#F5F0E8] tracking-tighter uppercase font-headline">EASTWAY</a>
+    <div class="hidden md:flex items-center space-x-8 font-headline font-bold uppercase tracking-wider text-sm">
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="index.html">Home</a>
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="About.html">About</a>
+      <a class="text-[#D0AC6E] border-b-2 border-[#D0AC6E] pb-1" href="Services.html">Services</a>
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Portfolio.html">Portfolio</a>
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Contact.html">Contact</a>
+    </div>
+    <a href="Contact.html" class="hidden md:inline-block bg-[#D0AC6E] text-[#1C3529] px-6 py-2 font-headline font-bold text-xs tracking-widest hover:brightness-110 active:scale-95 transition-all">GET A QUOTE</a>
+    <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden flex flex-col justify-center gap-1.5 p-1">
+      <span class="w-6 h-0.5 bg-[#F5F0E8] block"></span>
+      <span class="w-6 h-0.5 bg-[#F5F0E8] block"></span>
+      <span class="w-6 h-0.5 bg-[#F5F0E8] block"></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden bg-[#0D1A13] border-t border-white/10 px-8 py-6">
+    <div class="flex flex-col gap-5 font-headline font-bold uppercase tracking-wider text-sm">
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E]" href="index.html">Home</a>
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E]" href="About.html">About</a>
+      <a class="text-[#D0AC6E]" href="Services.html">Services</a>
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E]" href="Portfolio.html">Portfolio</a>
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E]" href="Contact.html">Contact</a>
+      <a href="Contact.html" class="bg-[#D0AC6E] text-[#1C3529] px-6 py-3 tracking-widest text-xs text-center mt-2 inline-block">GET A QUOTE</a>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-[88px]">
+  <!-- Hero -->
+  <section class="relative h-[716px] flex items-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img alt="Modern architectural building design and construction" class="w-full h-full object-cover opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbcERQvKnKC8SRbrHacpGRNk3Pev7UZoHH7reHPJOOo3qNpFkZZS-vCY9D4J4sUTTXY0p1T1WB3kfwSuPpae6X9fVtROk6mcMzxI4d5VzzO-R82Ojd8ytqYDYQkR_2QEKgvK9bvspeJWzXqJjAkkzzYnffZJQbBHbfR9SqmKq4gkHso-P9CWfYuvd9Dafc6AlCanGlMiyZJ_qHFiMiO9U_sXhvNckh_IBMEQNPLhB4DWOoyqyysZlTSkbTcWZmt_yWBe2pRBjVfaZP"/>
+      <div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+    </div>
+    <div class="relative z-10 px-8 md:px-24 max-w-7xl mx-auto w-full">
+      <div class="inline-block bg-[#D0AC6E] w-12 h-1 mb-6"></div>
+      <h1 class="text-6xl md:text-8xl font-black font-headline tracking-tighter leading-none mb-4">
+        DESIGN<br/>BUILD
+      </h1>
+      <p class="text-on-surface-variant max-w-xl text-lg font-medium leading-relaxed">
+        A single-source delivery method that unifies architectural design and construction under one contract — reducing risk, eliminating gaps, and accelerating your project timeline.
+      </p>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-24 px-8 md:px-24 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+      <div class="md:col-span-5">
+        <h2 class="text-4xl font-black font-headline tracking-tight uppercase leading-tight">
+          One Team. <span class="text-[#D0AC6E]">One Contract.</span> One Outcome.
+        </h2>
+      </div>
+      <div class="md:col-span-7 space-y-6 text-on-surface-variant leading-loose text-lg">
+        <p>
+          EASTWAY's Design-Build approach integrates our in-house architects, engineers, and construction teams from day one. By collapsing the traditional design-bid-build sequence into a single, collaborative process, we eliminate the miscommunication and delays that plague multi-party project delivery.
+        </p>
+        <p>
+          From concept through commissioning, you have <span class="text-on-surface font-semibold">one point of accountability</span>. Our team manages design development, permitting, procurement, and construction — ensuring every decision supports your budget and timeline from the very first drawing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities -->
+  <section class="py-24 px-8 md:px-24">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center gap-4 mb-16">
+        <h3 class="text-sm font-black font-headline tracking-[0.3em] uppercase text-on-surface-variant">Core Capabilities</h3>
+        <div class="h-px flex-grow bg-outline-variant/30"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="md:col-span-2 bg-surface-container p-10 border-l-4 border-[#D0AC6E] flex flex-col justify-between">
+          <div>
+            <span class="material-symbols-outlined text-[#D0AC6E] mb-6 text-4xl block">architecture</span>
+            <h4 class="text-2xl font-black font-headline uppercase mb-4 tracking-tight">Integrated Design</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Our architects and engineers collaborate directly with project managers from concept to completion, ensuring designs are buildable, code-compliant, and cost-effective from the start.</p>
+          </div>
+        </div>
+        <div class="bg-surface-container-high p-10 flex flex-col">
+          <span class="material-symbols-outlined text-[#D0AC6E] mb-6 text-4xl block">schedule</span>
+          <h4 class="text-xl font-black font-headline uppercase mb-4 tracking-tight">Accelerated Delivery</h4>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Overlapping design and construction phases shorten project schedules significantly compared to traditional sequential delivery models.</p>
+        </div>
+        <div class="bg-surface-container-high p-10 flex flex-col">
+          <span class="material-symbols-outlined text-[#D0AC6E] mb-6 text-4xl block">price_check</span>
+          <h4 class="text-xl font-black font-headline uppercase mb-4 tracking-tight">Budget Certainty</h4>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Early cost modelling during design locks in pricing before construction begins, protecting owners from scope creep and budget overruns.</p>
+        </div>
+        <div class="md:col-span-4 bg-surface-container-highest p-12">
+          <div class="max-w-2xl">
+            <span class="material-symbols-outlined text-[#D0AC6E] mb-6 text-4xl block">assignment_turned_in</span>
+            <h4 class="text-3xl font-black font-headline uppercase mb-4 tracking-tight">Permitting & Regulatory Management</h4>
+            <p class="text-on-surface-variant text-lg leading-relaxed">EASTWAY handles all permit applications, municipal approvals, and regulatory submissions as part of the integrated delivery. Our in-house P.Eng stamps drawings and engages directly with authorities having jurisdiction, streamlining approvals across Ontario municipalities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantage -->
+  <section class="py-24 bg-surface-container-lowest">
+    <div class="max-w-7xl mx-auto px-8 md:px-24">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-5xl font-black font-headline tracking-tighter uppercase leading-none mb-8">
+            The <span class="text-[#D0AC6E]">Eastway</span> Advantage
+          </h2>
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <div class="flex-shrink-0 w-12 h-12 bg-[#D0AC6E]/10 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[#D0AC6E]">engineering</span>
+              </div>
+              <div>
+                <h5 class="text-lg font-bold font-headline uppercase mb-1">P.Eng-Led Design Team</h5>
+                <p class="text-on-surface-variant text-sm">Our Principal Engineer of Ontario leads design coordination, ensuring structural integrity and code compliance are built into every concept before a single shovel hits the ground.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <div class="flex-shrink-0 w-12 h-12 bg-[#D0AC6E]/10 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[#D0AC6E]">reduce_capacity</span>
+              </div>
+              <div>
+                <h5 class="text-lg font-bold font-headline uppercase mb-1">Reduced Owner Risk</h5>
+                <p class="text-on-surface-variant text-sm">Single-contract accountability means no finger-pointing between designer and builder. EASTWAY owns the outcome — design flaws and field conflicts are our responsibility to resolve.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <div class="flex-shrink-0 w-12 h-12 bg-[#D0AC6E]/10 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[#D0AC6E]">handshake</span>
+              </div>
+              <div>
+                <h5 class="text-lg font-bold font-headline uppercase mb-1">Trusted by Major REITs</h5>
+                <p class="text-on-surface-variant text-sm">Pre-approved by Cadillac Fairview, Oxford, Dream, and Colliers — our Design-Build track record speaks to the confidence Canada's leading real estate companies place in our integrated delivery model.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-surface-container p-12 flex flex-col justify-center space-y-6">
+          <div class="text-6xl font-black font-headline text-[#D0AC6E]">35+</div>
+          <div class="text-xs font-headline font-bold uppercase tracking-widest text-on-surface-variant">Years of Integrated Delivery</div>
+          <div class="border-t border-outline-variant/30 pt-6 space-y-4 text-sm text-on-surface-variant font-body">
+            <div class="flex items-center gap-3"><span class="material-symbols-outlined text-[#D0AC6E] text-base">check_circle</span> Residential & Mixed-Use</div>
+            <div class="flex items-center gap-3"><span class="material-symbols-outlined text-[#D0AC6E] text-base">check_circle</span> Commercial & Retail</div>
+            <div class="flex items-center gap-3"><span class="material-symbols-outlined text-[#D0AC6E] text-base">check_circle</span> Hospitality & Hotels</div>
+            <div class="flex items-center gap-3"><span class="material-symbols-outlined text-[#D0AC6E] text-base">check_circle</span> Industrial & Institutional</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-[#D0AC6E] py-20 px-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-black font-headline uppercase tracking-tighter mb-8 text-[#1C3529]">Ready to Start Your Next Project?</h2>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+        <a href="Contact.html" class="bg-[#1C3529] text-[#D0AC6E] px-10 py-4 font-black font-headline tracking-widest uppercase text-sm hover:bg-[#0D1A13] transition-colors active:scale-95 inline-block">Request a Quote</a>
+        <a href="Services.html" class="border-2 border-[#1C3529] text-[#1C3529] px-10 py-4 font-black font-headline tracking-widest uppercase text-sm hover:bg-[#1C3529]/10 transition-colors active:scale-95 inline-block">All Services</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#0A1510] w-full py-16 px-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-3xl font-black text-[#F5F0E8] mb-8 font-headline uppercase tracking-tighter">EASTWAY</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
+      <div>
+        <h5 class="text-[#D0AC6E] font-headline font-bold uppercase tracking-widest text-xs mb-6">Get in Touch</h5>
+        <ul class="space-y-4 font-['Inter'] text-sm text-[#F5F0E8]">
+          <li class="hover:text-[#D0AC6E] transition-colors cursor-pointer flex items-center gap-2"><span class="material-symbols-outlined text-sm">mail</span> projects@eastwaygroup.ca</li>
+          <li class="hover:text-[#D0AC6E] transition-colors cursor-pointer flex items-center gap-2"><span class="material-symbols-outlined text-sm">call</span> +1 (416) 800 6696</li>
+          <li class="hover:text-[#D0AC6E] transition-colors cursor-pointer flex items-center gap-2"><span class="material-symbols-outlined text-sm">schedule</span> Mon – Fri: 7am – 5pm</li>
+          <li class="flex items-center gap-2">
+            <a href="https://www.instagram.com/eastwaygroup.ca/?hl=en" target="_blank" rel="noopener noreferrer" class="hover:text-[#D0AC6E] transition-colors flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-[#D0AC6E] font-headline font-bold uppercase tracking-widest text-xs mb-6">Head Office</h5>
+        <p class="font-['Inter'] text-sm text-[#F5F0E8]/70 leading-relaxed">599 Denison St. Unit 3<br/>Markham, Ontario<br/>Canada</p>
+      </div>
+      <div>
+        <h5 class="text-[#D0AC6E] font-headline font-bold uppercase tracking-widest text-xs mb-6">Navigation</h5>
+        <ul class="space-y-2 font-['Inter'] text-sm text-[#F5F0E8]/70">
+          <li><a href="index.html" class="hover:text-[#D0AC6E] transition-colors">Home</a></li>
+          <li><a href="About.html" class="hover:text-[#D0AC6E] transition-colors">About</a></li>
+          <li><a href="Services.html" class="hover:text-[#D0AC6E] transition-colors">Services</a></li>
+          <li><a href="Portfolio.html" class="hover:text-[#D0AC6E] transition-colors">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="font-['Inter'] text-xs text-[#F5F0E8]/40 uppercase tracking-widest">&copy; 2026 EASTWAY CONSTRUCTION. ALL RIGHTS RESERVED.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -86,11 +86,11 @@
 <body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
 
 <!-- TopAppBar -->
-<header class="bg-[#0D1A13]/85 backdrop-blur-md fixed top-0 w-full z-50">
-  <nav class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
+<nav class="fixed top-0 w-full z-50 bg-[#0D1A13]/85 backdrop-blur-md">
+  <div class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
     <a href="index.html" class="text-2xl font-black text-[#F5F0E8] tracking-tighter font-headline">EASTWAY</a>
     <!-- Desktop Nav -->
-    <div class="hidden md:flex items-center space-x-8 font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider">
+    <div class="hidden md:flex items-center space-x-8 font-headline font-bold uppercase tracking-wider text-sm">
       <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="index.html">Home</a>
       <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="About.html">About</a>
       <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Services.html">Services</a>
@@ -98,7 +98,7 @@
       <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Contact.html">Contact</a>
     </div>
     <!-- Desktop CTA -->
-    <a href="Contact.html" class="hidden md:inline-block bg-primary-container text-on-primary-container px-6 py-2 font-headline font-bold uppercase tracking-widest text-xs transition-transform active:scale-95">
+    <a href="Contact.html" class="hidden md:inline-block bg-[#D0AC6E] text-[#1C3529] px-6 py-2 font-headline font-bold text-xs tracking-widest uppercase hover:brightness-110 active:scale-95 transition-all">
       GET A QUOTE
     </a>
     <!-- Mobile Hamburger -->
@@ -107,19 +107,19 @@
       <span class="w-6 h-0.5 bg-[#F5F0E8] block"></span>
       <span class="w-6 h-0.5 bg-[#F5F0E8] block"></span>
     </button>
-  </nav>
+  </div>
   <!-- Mobile Menu -->
   <div id="mobileMenu" class="hidden md:hidden bg-[#0D1A13] border-t border-white/10 px-8 py-6">
-    <div class="flex flex-col gap-5 font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider">
+    <div class="flex flex-col gap-5 font-headline font-bold uppercase tracking-wider text-sm">
       <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="index.html">Home</a>
       <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="About.html">About</a>
       <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Services.html">Services</a>
       <a class="text-[#D0AC6E]" href="Portfolio.html">Portfolio</a>
       <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Contact.html">Contact</a>
-      <a href="Contact.html" class="bg-[#D0AC6E] text-white px-6 py-3 tracking-widest text-xs text-center mt-2 inline-block">GET A QUOTE</a>
+      <a href="Contact.html" class="bg-[#D0AC6E] text-[#1C3529] px-6 py-3 font-headline font-bold tracking-widest text-xs uppercase text-center mt-2 inline-block">GET A QUOTE</a>
     </div>
   </div>
-</header>
+</nav>
 
 <main class="pt-24 min-h-screen">
   <!-- Hero Title Section -->
@@ -140,6 +140,7 @@
       <button onclick="filterProjects('residential', this)" class="bg-surface-container-low text-on-surface/70 hover:text-on-surface px-6 py-3 transition-colors">Residential</button>
       <button onclick="filterProjects('industrial', this)" class="bg-surface-container-low text-on-surface/70 hover:text-on-surface px-6 py-3 transition-colors">Industrial</button>
       <button onclick="filterProjects('institutional', this)" class="bg-surface-container-low text-on-surface/70 hover:text-on-surface px-6 py-3 transition-colors">Institutional</button>
+      <button onclick="filterProjects('multiplex', this)" class="bg-surface-container-low text-on-surface/70 hover:text-on-surface px-6 py-3 transition-colors">Multiplex</button>
     </div>
   </section>
 
@@ -186,13 +187,14 @@
           <a class="border border-outline-variant/30 px-8 py-3 font-headline text-xs font-bold uppercase tracking-widest hover:bg-primary-container hover:border-primary-container transition-all" href="ProjectDetails/CachetProjectDetail.html">View Project Details</a>
         </div>
       </div>
-      <!-- Project Tile 5: Commercial Small -->
-      <div data-category="commercial" class="md:col-span-4 md:row-span-1 relative overflow-hidden group project-card bg-surface-container-low">
-        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 project-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCH0CbRsD8Ccy9cLpXxZXj_Nfw-kK8Ls9emfHp-6lBPb_KArsQrbQ2dhORaOnFhPP6ZJAy8eIsHvqt6BHodXAd_ajObJ4i-5-JKosP-GPX3WNHHMPzyqig4uUuWrBdpNTJydLEUebIxHkuvAepqzhgNAeyjdslx7IIuLQoqQB9slIVkr6OZGj4XkvHZTKuZT8z2cXtViKqg7EmDeSxEAXqP6BPhEpMj5BLkKVSDKWxVLvm4eZzU4vrg1H4kvQpdH2A1a_rJfJKr02x')"></div>
+      <!-- Project Tile 5: Multiplex - Coming Soon -->
+      <div data-category="multiplex" class="md:col-span-4 md:row-span-1 relative overflow-hidden group project-card bg-surface-container-low">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 project-image blur-md scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCH0CbRsD8Ccy9cLpXxZXj_Nfw-kK8Ls9emfHp-6lBPb_KArsQrbQ2dhORaOnFhPP6ZJAy8eIsHvqt6BHodXAd_ajObJ4i-5-JKosP-GPX3WNHHMPzyqig4uUuWrBdpNTJydLEUebIxHkuvAepqzhgNAeyjdslx7IIuLQoqQB9slIVkr6OZGj4XkvHZTKuZT8z2cXtViKqg7EmDeSxEAXqP6BPhEpMj5BLkKVSDKWxVLvm4eZzU4vrg1H4kvQpdH2A1a_rJfJKr02x')"></div>
         <div class="absolute inset-0 bg-background/80 project-overlay opacity-0 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-8 backdrop-blur-sm">
-          <span class="text-primary-container font-headline font-bold uppercase tracking-widest text-xs mb-2">Commercial</span>
-          <h3 class="font-headline text-2xl font-black uppercase tracking-tighter mb-1">NEXUS HQ</h3>
-          <p class="font-body text-on-surface/70 uppercase tracking-widest text-xs">Seattle, WA</p>
+          <span class="text-primary-container font-headline font-bold uppercase tracking-widest text-xs mb-2">Multiplex</span>
+          <h3 class="font-headline text-2xl font-black uppercase tracking-tighter mb-1">MULTIPLEX AT NORTH YORK</h3>
+          <p class="font-body text-on-surface/70 uppercase tracking-widest text-xs mb-4">North York, Ontario</p>
+          <span class="border border-primary-container/50 text-primary-container font-headline font-bold uppercase tracking-widest text-xs px-4 py-2">TBD — In Progress</span>
         </div>
       </div>
       <!-- Project Tile 6: Institutional Wide -->

@@ -87,19 +87,19 @@
 <body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
 
 <!-- TopAppBar -->
-<header class="bg-[#0D1A13]/85 backdrop-blur-md fixed top-0 w-full z-50">
-  <nav class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
+<nav class="fixed top-0 w-full z-50 bg-[#0D1A13]/85 backdrop-blur-md">
+  <div class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
     <a href="index.html" class="text-2xl font-black text-[#F5F0E8] tracking-tighter font-headline">EASTWAY</a>
     <!-- Desktop Nav -->
-    <div class="hidden md:flex items-center gap-10">
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="index.html">Home</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="About.html">About</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#D0AC6E] border-b-2 border-[#D0AC6E] pb-1" href="Services.html">Services</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Portfolio.html">Portfolio</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Contact.html">Contact</a>
+    <div class="hidden md:flex items-center space-x-8 font-headline font-bold uppercase tracking-wider text-sm">
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="index.html">Home</a>
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="About.html">About</a>
+      <a class="text-[#D0AC6E] border-b-2 border-[#D0AC6E] pb-1" href="Services.html">Services</a>
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Portfolio.html">Portfolio</a>
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Contact.html">Contact</a>
     </div>
     <!-- Desktop CTA -->
-    <a href="Contact.html" class="hidden md:inline-block bg-primary-container text-on-primary-container font-headline font-extrabold px-8 py-3 tracking-widest active:scale-95 transition-transform hover:brightness-110">
+    <a href="Contact.html" class="hidden md:inline-block bg-[#D0AC6E] text-[#1C3529] px-6 py-2 font-headline font-bold text-xs tracking-widest uppercase hover:brightness-110 active:scale-95 transition-all">
       GET A QUOTE
     </a>
     <!-- Mobile Hamburger -->
@@ -108,21 +108,21 @@
       <span class="w-6 h-0.5 bg-[#F5F0E8] block"></span>
       <span class="w-6 h-0.5 bg-[#F5F0E8] block"></span>
     </button>
-  </nav>
+  </div>
   <!-- Mobile Menu -->
   <div id="mobileMenu" class="hidden md:hidden bg-[#0D1A13] border-t border-white/10 px-8 py-6">
-    <div class="flex flex-col gap-5">
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="index.html">Home</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="About.html">About</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#D0AC6E]" href="Services.html">Services</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Portfolio.html">Portfolio</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Contact.html">Contact</a>
-      <a href="Contact.html" class="bg-[#D0AC6E] text-white font-['Plus_Jakarta_Sans'] font-bold px-6 py-3 tracking-widest text-xs uppercase text-center mt-2 inline-block">GET A QUOTE</a>
+    <div class="flex flex-col gap-5 font-headline font-bold uppercase tracking-wider text-sm">
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="index.html">Home</a>
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="About.html">About</a>
+      <a class="text-[#D0AC6E]" href="Services.html">Services</a>
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Portfolio.html">Portfolio</a>
+      <a class="text-[#F5F0E8] hover:text-[#D0AC6E] transition-colors" href="Contact.html">Contact</a>
+      <a href="Contact.html" class="bg-[#D0AC6E] text-[#1C3529] px-6 py-3 font-headline font-bold tracking-widest text-xs uppercase text-center mt-2 inline-block">GET A QUOTE</a>
     </div>
   </div>
-</header>
+</nav>
 
-<main class="pt-28">
+<main class="pt-24">
   <!-- Hero Section -->
   <section class="relative h-[614px] flex items-end px-8 pb-20 overflow-hidden">
     <div class="absolute inset-0 z-0">
@@ -166,7 +166,7 @@
             <p class="text-on-surface/80 text-sm mb-8 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               Full-scale site management and execution using our proprietary network of precision-vetted trade partners and field supervisors.
             </p>
-            <a href="ServiceDetail.html" class="flex items-center gap-3 text-primary-container font-headline font-bold uppercase tracking-widest text-sm hover:translate-x-2 transition-transform">
+            <a href="GeneralContractingDetail.html" class="flex items-center gap-3 text-primary-container font-headline font-bold uppercase tracking-widest text-sm hover:translate-x-2 transition-transform">
               LEARN MORE <span class="material-symbols-outlined">arrow_forward</span>
             </a>
           </div>
@@ -180,7 +180,7 @@
             <p class="text-on-surface/80 text-sm mb-8 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               Critical infrastructure upkeep, facility retrofitting, and 24/7 emergency response for high-output manufacturing environments.
             </p>
-            <a href="ServiceDetail.html" class="flex items-center gap-3 text-primary-container font-headline font-bold uppercase tracking-widest text-sm hover:translate-x-2 transition-transform">
+            <a href="IndustrialMaintenanceDetail.html" class="flex items-center gap-3 text-primary-container font-headline font-bold uppercase tracking-widest text-sm hover:translate-x-2 transition-transform">
               LEARN MORE <span class="material-symbols-outlined">arrow_forward</span>
             </a>
           </div>
@@ -194,7 +194,7 @@
             <p class="text-on-surface/80 text-sm mb-8 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               Large-scale structural design and infrastructure development, specializing in bridges, highways, and water treatment facilities.
             </p>
-            <a href="ServiceDetail.html" class="flex items-center gap-3 text-primary-container font-headline font-bold uppercase tracking-widest text-sm hover:translate-x-2 transition-transform">
+            <a href="CivilEngineeringDetail.html" class="flex items-center gap-3 text-primary-container font-headline font-bold uppercase tracking-widest text-sm hover:translate-x-2 transition-transform">
               LEARN MORE <span class="material-symbols-outlined">arrow_forward</span>
             </a>
           </div>
@@ -208,7 +208,7 @@
             <p class="text-on-surface/80 text-sm mb-8 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               Advanced mechanical, electrical, and plumbing engineering. Integrated systems designed for efficiency and long-term sustainability.
             </p>
-            <a href="ServiceDetail.html" class="flex items-center gap-3 text-primary-container font-headline font-bold uppercase tracking-widest text-sm hover:translate-x-2 transition-transform">
+            <a href="MEPSolutionsDetail.html" class="flex items-center gap-3 text-primary-container font-headline font-bold uppercase tracking-widest text-sm hover:translate-x-2 transition-transform">
               LEARN MORE <span class="material-symbols-outlined">arrow_forward</span>
             </a>
           </div>
@@ -222,7 +222,7 @@
             <p class="text-on-surface/80 text-sm mb-8 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               A single-source delivery method that combines architectural design and construction services under one unified contract.
             </p>
-            <a href="ServiceDetail.html" class="flex items-center gap-3 text-primary-container font-headline font-bold uppercase tracking-widest text-sm hover:translate-x-2 transition-transform">
+            <a href="DesignBuildDetail.html" class="flex items-center gap-3 text-primary-container font-headline font-bold uppercase tracking-widest text-sm hover:translate-x-2 transition-transform">
               LEARN MORE <span class="material-symbols-outlined">arrow_forward</span>
             </a>
           </div>
